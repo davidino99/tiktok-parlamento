@@ -1,0 +1,84 @@
+{
+  "genere": "quiz",
+  "titolo": "Qual è il numero dopo?",
+  "descrizione": "3 sequenze, dalla più facile alla più difficile. L'ultima è geniale 🔢",
+  "hashtag": [
+    "quiz",
+    "indovinelli",
+    "rompicapo",
+    "logica",
+    "imparacontiktok",
+    "perte"
+  ],
+  "commentoFissato": "Hai preso l'ultima senza guardare la risposta? 👇",
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🔢",
+      "testo": "Qual è il numero dopo?",
+      "sotto": "L'ultima è geniale",
+      "voce": "Tre sequenze di numeri. Dalla più facile alla più difficile. L'ultima è geniale."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Sequenza 1",
+      "testo": "2, 4, 8, 16, …?",
+      "voce": "Due, quattro, otto, sedici. Qual è il prossimo?",
+      "secondi": 3,
+      "opzioni": [
+        "24",
+        "32",
+        "30"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Trentadue. Ogni numero è il doppio di quello prima.",
+      "giusta": 1,
+      "spiegazione": "Ogni numero è il doppio del precedente."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Sequenza 2",
+      "testo": "1, 1, 2, 3, 5, 8, …?",
+      "voce": "Uno, uno, due, tre, cinque, otto. Qual è il prossimo?",
+      "secondi": 3,
+      "opzioni": [
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Tredici! Ogni numero è la somma dei due prima. È la sequenza di Fibonacci, un matematico di Pisa.",
+      "giusta": 2,
+      "spiegazione": "Ogni numero è la somma dei due precedenti: 5 + 8."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Sequenza 3",
+      "testo": "1, 11, 21, 1211, 111221, …?",
+      "voce": "1, 11, 21, 1211, 111221. Qual è il prossimo?",
+      "secondi": 4,
+      "opzioni": [
+        "1112221",
+        "312211",
+        "122111"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "312211! Ogni numero descrive a voce quello prima: tre uno, due due, un uno.",
+      "giusta": 1,
+      "spiegazione": "Ogni numero descrive il precedente: «tre 1, due 2, un 1»."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "L'ultima l'hai presa?",
+      "sotto": "Sii sincero nei commenti",
+      "voce": "L'ultima l'hai presa senza guardare la risposta? Sii sincero, scrivilo nei commenti."
+    }
+  ]
+}

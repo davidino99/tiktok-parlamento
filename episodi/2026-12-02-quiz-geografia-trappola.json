@@ -1,0 +1,82 @@
+{
+  "genere": "quiz",
+  "titolo": "3 domande di geografia",
+  "descrizione": "3 domande di geografia. L'ultima è una trappola 🌍",
+  "hashtag": [
+    "quiz",
+    "geografia",
+    "culturagenerale",
+    "imparacontiktok",
+    "perte"
+  ],
+  "commentoFissato": "Quante ne hai prese? 0, 1, 2 o 3? 👇",
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🌍",
+      "testo": "3 domande di geografia. L'ultima è una trappola.",
+      "voce": "Tre domande di geografia. L'ultima è una trappola."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 1",
+      "testo": "Qual è la capitale dell'Australia?",
+      "voce": "Qual è la capitale dell'Australia?",
+      "secondi": 3,
+      "opzioni": [
+        "Sydney",
+        "Canberra",
+        "Melbourne"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Canberra! Fu scelta proprio per non scontentare né Sydney né Melbourne.",
+      "giusta": 1,
+      "spiegazione": "Scelta nel 1908 come compromesso tra Sydney e Melbourne."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 2",
+      "testo": "Qual è il fiume più lungo d'Italia?",
+      "voce": "Qual è il fiume più lungo d'Italia?",
+      "secondi": 3,
+      "opzioni": [
+        "Tevere",
+        "Adige",
+        "Po"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Il Po. Circa seicentocinquanta chilometri, dal Monviso al mare Adriatico.",
+      "giusta": 2,
+      "spiegazione": "Circa 650 km, dal Monviso all'Adriatico."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 3",
+      "testo": "Quale Paese ha più fusi orari?",
+      "voce": "Quale Paese ha più fusi orari al mondo?",
+      "secondi": 3,
+      "opzioni": [
+        "Russia",
+        "Stati Uniti",
+        "Francia"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "La Francia! Con i suoi territori sparsi per il mondo, ha dodici fusi orari. Più della Russia.",
+      "giusta": 2,
+      "spiegazione": "12, grazie ai territori d'oltremare."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Quante ne hai prese?",
+      "sotto": "Scrivi 0, 1, 2 o 3",
+      "voce": "Quante ne hai prese? Scrivi il numero nei commenti."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "genere": "quiz",
+  "titolo": "Il test che metà di Harvard sbaglia",
+  "descrizione": "3 domande di logica. Più di metà degli studenti di Harvard, MIT e Princeton ha sbagliato la prima 🧠 Tu?",
+  "hashtag": [
+    "quiz",
+    "logica",
+    "harvard",
+    "rompicapo",
+    "imparacontiktok",
+    "perte"
+  ],
+  "commentoFissato": "Quante ne hai prese? 0, 1, 2 o 3? 👇",
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🎓",
+      "testo": "Più di metà degli studenti di Harvard ha sbagliato la prima.",
+      "sotto": "Tu ci riesci?",
+      "voce": "Più di metà degli studenti di Harvard ha sbagliato la prima di queste domande. Tu?"
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 1",
+      "testo": "Una mazza e una palla costano 1,10 €. La mazza costa 1 € più della palla. Quanto costa la palla?",
+      "voce": "Mazza e palla costano un euro e dieci. La mazza costa un euro più della palla. Quanto costa la palla?",
+      "secondi": 3,
+      "opzioni": [
+        "10 centesimi",
+        "5 centesimi",
+        "1 euro"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Cinque centesimi! Con dieci, il totale farebbe un euro e venti.",
+      "giusta": 1,
+      "spiegazione": "Palla 0,05 € + mazza 1,05 € = 1,10 €."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 2",
+      "testo": "5 macchine fanno 5 pezzi in 5 minuti. Quanto ci mettono 100 macchine a fare 100 pezzi?",
+      "voce": "Cinque macchine, cinque pezzi, cinque minuti. Quanto ci mettono cento macchine per cento pezzi?",
+      "secondi": 3,
+      "opzioni": [
+        "100 minuti",
+        "20 minuti",
+        "5 minuti"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Cinque minuti. Ogni macchina fa un pezzo in cinque minuti.",
+      "giusta": 2,
+      "spiegazione": "Ogni macchina fa 1 pezzo in 5 minuti."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 3",
+      "testo": "Le ninfee in un lago raddoppiano ogni giorno. In 48 giorni coprono tutto il lago. Quando ne coprono metà?",
+      "voce": "Le ninfee raddoppiano ogni giorno e coprono il lago in quarantotto giorni. Quando ne coprono metà?",
+      "secondi": 3,
+      "opzioni": [
+        "24 giorni",
+        "47 giorni",
+        "12 giorni"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Quarantasette! Il giorno dopo raddoppiano, e il lago è pieno.",
+      "giusta": 1,
+      "spiegazione": "Il giorno dopo raddoppiano: metà al 47°, tutto al 48°."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Quante ne hai prese? 0, 1, 2 o 3?",
+      "sotto": "Scrivilo nei commenti",
+      "voce": "Quante ne hai prese? Scrivilo nei commenti."
+    }
+  ]
+}
