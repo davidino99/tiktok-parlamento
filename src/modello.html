@@ -93,7 +93,7 @@
   /* Sottotitoli parola per parola: metà delle persone guarda senza audio. */
   #sottotitoli { position: absolute; left: 70px; right: 150px; top: 1310px; min-height: 200px;
                  display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;
-                 gap: 6px 20px; text-align: center; font-weight: 900; font-size: 66px; line-height: 1.15;
+                 gap: 6px 20px; text-align: center; overflow-wrap: anywhere; font-weight: 900; font-size: 66px; line-height: 1.15;
                  text-shadow: 0 4px 0 rgba(0,0,0,.55), 0 0 30px rgba(0,0,0,.5); }
   #sottotitoli span { opacity: .55; }
   #sottotitoli span.detta { opacity: 1; }
@@ -311,7 +311,11 @@ window.frame = function (t) {
   }
   if (attuale !== bloccoMostrato) {
     const sotto = window.__sotto; sotto.innerHTML = "";
-    if (attuale >= 0) blocchi[attuale].forEach((p) => { const sp = crea("span", "", p.testo); p.el = sp; sotto.append(sp); });
+    if (attuale >= 0) blocchi[attuale].forEach((p) => {
+      const sp = crea("span", "", p.testo);
+      if (p.testo.length > 13) sp.style.fontSize = Math.max(34, Math.round(66 * 13 / p.testo.length)) + "px"; // parole lunghe: non escono dai bordi
+      p.el = sp; sotto.append(sp);
+    });
     bloccoMostrato = attuale;
   }
   if (attuale >= 0) blocchi[attuale].forEach((p) => {

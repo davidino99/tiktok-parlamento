@@ -1,0 +1,58 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 cose che hai sempre saputo sbagliate",
+  "descrizione": "3 cose che probabilmente hai sempre saputo sbagliate 🍓",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "miti"
+  ],
+  "commentoFissato": "Quale credevi anche tu? 1, 2 o 3 👇",
+  "fonti": [
+    "Botanica: la banana è una bacca; la fragola è un falso frutto (i veri frutti sono gli acheni, i 'semini').",
+    "Arachide (Arachis hypogaea): legume della famiglia delle Fabaceae, non una noce.",
+    "Pesci rossi: studi di condizionamento mostrano memoria di settimane e mesi, non di pochi secondi."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🙅",
+      "testo": "3 cose che hai sempre saputo sbagliate",
+      "voce": "Tre cose che probabilmente hai sempre saputo sbagliate."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Mito 1",
+      "emoji": "🍓",
+      "grande": "Bacca? No.",
+      "testo": "La banana è una bacca. La fragola no.",
+      "voce": "Uno. Per i botanici la banana è una bacca. La fragola invece no: i suoi veri frutti sono quei semini sulla superficie."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Mito 2",
+      "emoji": "🥜",
+      "grande": "Un legume",
+      "testo": "Le arachidi non sono noci: sono parenti di fagioli e piselli.",
+      "voce": "Due. Le arachidi non sono noci. Sono legumi, parenti di fagioli, ceci e piselli. Crescono addirittura sottoterra."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Mito 3",
+      "emoji": "🐠",
+      "grande": "Mesi, non secondi",
+      "testo": "Il pesce rosso ricorda le cose per mesi.",
+      "voce": "Tre. Il pesce rosso non ha una memoria di tre secondi. Negli esperimenti ricorda suoni e orari del cibo per mesi."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale credevi anche tu?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale credevi anche tu? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

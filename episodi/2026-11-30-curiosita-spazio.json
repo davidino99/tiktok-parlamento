@@ -1,0 +1,59 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 fatti sullo spazio che fanno paura",
+  "descrizione": "3 fatti veri sullo spazio 🌌 Il primo è difficile da immaginare.",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "spazio",
+    "astronomia"
+  ],
+  "commentoFissato": "Quale ti ha colpito di più? 1, 2 o 3 👇",
+  "fonti": [
+    "Stella di neutroni: densità ~4×10^17 kg/m³; un cucchiaino (~5 ml) pesa circa un miliardo di tonnellate o più (NASA).",
+    "Luce dal Sole alla Terra: circa 8 minuti e 20 secondi.",
+    "Impronte lunari: senza vento né acqua, si cancellano solo per l'erosione lentissima dei micrometeoriti, nell'arco di milioni di anni."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🌌",
+      "testo": "3 fatti sullo spazio difficili da immaginare",
+      "voce": "Tre fatti veri sullo spazio. Il primo è quasi impossibile da immaginare."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 1",
+      "emoji": "🥄",
+      "grande": "1 miliardo di tonnellate",
+      "testo": "Un cucchiaino di stella di neutroni.",
+      "voce": "Uno. Una stella di neutroni è così densa che un solo cucchiaino del suo materiale peserebbe circa un miliardo di tonnellate."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 2",
+      "emoji": "☀️",
+      "grande": "8 minuti fa",
+      "testo": "Il Sole che vedi è il Sole di 8 minuti fa.",
+      "voce": "Due. La luce del Sole impiega circa otto minuti per arrivare fino a te. Quindi il Sole che vedi è sempre quello di otto minuti fa."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 3",
+      "emoji": "👣",
+      "grande": "Milioni di anni",
+      "testo": "Le impronte sulla Luna possono durare milioni di anni.",
+      "voce": "Tre. Sulla Luna non c'è vento e non c'è pioggia. Le impronte degli astronauti possono restare lì per milioni di anni."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale ti ha colpito di più?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale ti ha colpito di più? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

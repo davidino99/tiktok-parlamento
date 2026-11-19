@@ -1,0 +1,78 @@
+{
+  "genere": "quiz",
+  "titolo": "3 domande facilissime",
+  "descrizione": "3 domande facilissime. Eppure… 🧠",
+  "hashtag": [
+    "quiz",
+    "indovinelli",
+    "rompicapo",
+    "logica",
+    "imparacontiktok",
+    "perte"
+  ],
+  "commentoFissato": "Quale ti ha fregato? Scrivi 1, 2 o 3 👇",
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "😏",
+      "testo": "3 domande facilissime. Eppure…",
+      "sotto": "3 secondi per ognuna",
+      "voce": "Tre domande facilissime. Eppure, quasi sempre se ne sbaglia almeno una."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 1",
+      "testo": "Quanti mesi hanno 28 giorni?",
+      "voce": "Quanti mesi hanno ventotto giorni?",
+      "secondi": 3,
+      "opzioni": [
+        "1",
+        "2",
+        "12"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Dodici! Tutti i mesi hanno almeno ventotto giorni.",
+      "giusta": 2,
+      "spiegazione": "Tutti i mesi hanno almeno 28 giorni."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 2",
+      "testo": "Sei in gara e superi il secondo. In che posizione sei?",
+      "voce": "Sei in una gara e superi il secondo. In che posizione sei adesso?",
+      "secondi": 3,
+      "opzioni": [
+        "Primo",
+        "Secondo",
+        "Terzo"
+      ]
+    },
+    {
+      "tipo": "risposta",
+      "voce": "Secondo! Hai preso il suo posto. Il primo è ancora davanti.",
+      "giusta": 1,
+      "spiegazione": "Prendi il suo posto: secondo."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Domanda 3",
+      "testo": "Esce sotto la pioggia senza ombrello né cappello. Non si bagna un capello. Come?",
+      "voce": "Un uomo esce sotto la pioggia senza ombrello e senza cappello. Non si bagna nemmeno un capello. Come è possibile?",
+      "secondi": 3
+    },
+    {
+      "tipo": "risposta",
+      "voce": "È calvo! Non ha capelli da bagnare.",
+      "testo": "È calvo"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Quale ti ha fregato?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale ti ha fregato? Scrivi il numero nei commenti. E sfida un amico."
+    }
+  ]
+}
