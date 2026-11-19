@@ -24,7 +24,7 @@ export async function sintetizza(testo, fileUscita) {
 
   const voce = process.env.ELEVENLABS_VOICE_ID || "JBFqnCBsd6RMkjVDRZzb";
   const modello = process.env.ELEVENLABS_MODEL || "eleven_multilingual_v2";
-  const risposta = await fetch(
+  const richiesta = () => fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${voce}/with-timestamps?output_format=mp3_44100_128`,
     {
       method: "POST",
@@ -37,6 +37,16 @@ export async function sintetizza(testo, fileUscita) {
       }),
     },
   );
+
+  // Troppe richieste insieme (429) o errore temporaneo (5xx): aspetta e riprova.
+  let risposta;
+  for (let tentativo = 1; ; tentativo++) {
+    risposta = await richiesta();
+    if (risposta.ok || tentativo >= 6 || !(risposta.status === 429 || risposta.status >= 500)) break;
+    const attesa = Math.min(60, 4 * 2 ** (tentativo - 1)) + Math.random() * 3;
+    console.log(`  ElevenLabs ${risposta.status}, riprovo tra ${attesa.toFixed(0)} s (tentativo ${tentativo})`);
+    await new Promise((r) => setTimeout(r, attesa * 1000));
+  }
   if (!risposta.ok) throw new Error(`ElevenLabs ${risposta.status}: ${await risposta.text()}`);
   const dati = await risposta.json();
   await writeFile(fileUscita, Buffer.from(dati.audio_base64, "base64"));
