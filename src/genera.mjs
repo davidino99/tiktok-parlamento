@@ -12,7 +12,7 @@ import { spawnSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { sintetizza, voceDisponibile } from "./voce.mjs";
+import { motore, sintetizzaTutte, voceDisponibile } from "./voce.mjs";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
@@ -61,9 +61,9 @@ function controlla(ep, nome) {
 async function preparaLinea(ep, cartella) {
   const scene = [];
   let t = 0;
+  const voci = await sintetizzaTutte(ep.scene.map((d) => (d.voce || "").trim()), cartella);
   for (const [i, dati] of ep.scene.entries()) {
-    const testo = (dati.voce || "").trim();
-    const v = testo ? await sintetizza(testo, path.join(cartella, `voce-${i}.mp3`)) : { file: null, durata: 0, parole: null };
+    const v = voci[i];
     const inizio = t;
     const voce = { inizio: inizio + RITARDO_VOCE, fine: inizio + RITARDO_VOCE + v.durata };
     let fine = voce.fine + PAUSA_DOPO_VOCE;
@@ -177,7 +177,7 @@ async function generaUno(fileEpisodio) {
   const uscita = path.join(RADICE, "uscita");
   await mkdir(uscita, { recursive: true });
 
-  console.log(`▶ ${nome} (${ep.genere}) — voce: ${voceDisponibile() ? "ElevenLabs" : "assente (stima dei tempi)"}`);
+  console.log(`▶ ${nome} (${ep.genere}) — voce: ${voceDisponibile() ? motore() : "assente (stima dei tempi)"}`);
   const linea = await preparaLinea(ep, lavoro);
   const riusate = linea.scene.filter((s) => s.riusata).length;
   console.log(`  durata ${linea.durata.toFixed(1)} s, ${linea.scene.length} scene${riusate ? `, voce riusata per ${riusate} scene` : ""}`);
