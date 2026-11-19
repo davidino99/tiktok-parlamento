@@ -1,0 +1,64 @@
+{
+  "genere": "quiz",
+  "titolo": "3 indovinelli, il terzo è una trappola",
+  "descrizione": "3 indovinelli, 3 secondi ciascuno. Il terzo è una trappola 🧠 Quanti ne hai presi?",
+  "hashtag": ["indovinelli", "quiz", "rompicapo", "logica", "imparacontiktok", "perte"],
+  "commentoFissato": "Scrivi quanti ne hai indovinati: 0, 1, 2 o 3? 👇 Domani un quiz più difficile.",
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🧠",
+      "testo": "3 indovinelli. Il terzo è una trappola.",
+      "sotto": "Hai 3 secondi per ognuno",
+      "voce": "Tre indovinelli. Il terzo è una trappola. Hai tre secondi per ognuno."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Indovinello 1",
+      "testo": "Più ne togli, più diventa grande. Cos'è?",
+      "voce": "Più ne togli, più diventa grande. Cos'è?",
+      "secondi": 3
+    },
+    {
+      "tipo": "risposta",
+      "testo": "Un buco",
+      "spiegazione": "Più terra togli, più si allarga.",
+      "voce": "Un buco! Più terra togli, più si allarga."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Indovinello 2",
+      "testo": "Un mattone pesa 1 kg più mezzo mattone. Quanto pesa un mattone?",
+      "opzioni": ["1,5 kg", "2 kg", "1 kg"],
+      "voce": "Un mattone pesa un chilo più mezzo mattone. Quanto pesa un mattone intero?",
+      "secondi": 3
+    },
+    {
+      "tipo": "risposta",
+      "giusta": 1,
+      "spiegazione": "Se mezzo mattone pesa 1 kg, il mattone intero ne pesa 2.",
+      "voce": "Due chili. Se mezzo mattone pesa un chilo, quello intero ne pesa due."
+    },
+    {
+      "tipo": "domanda",
+      "etichetta": "Indovinello 3",
+      "testo": "Il padre di Marta ha 5 figlie: Lala, Lele, Lili, Lolo… e la quinta?",
+      "opzioni": ["Lulu", "Lily", "Marta"],
+      "voce": "Il padre di Marta ha cinque figlie: Lala, Lele, Lili, Lolo. Come si chiama la quinta?",
+      "secondi": 3
+    },
+    {
+      "tipo": "risposta",
+      "giusta": 2,
+      "spiegazione": "Era scritto all’inizio: è il padre di Marta!",
+      "voce": "Marta! Era nella prima frase: è il padre di Marta."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Quanti ne hai presi? 0, 1, 2 o 3?",
+      "sotto": "Scrivilo nei commenti",
+      "voce": "Quanti ne hai indovinati? Scrivi il numero nei commenti. E se dici tre… riguarda il primo."
+    }
+  ]
+}

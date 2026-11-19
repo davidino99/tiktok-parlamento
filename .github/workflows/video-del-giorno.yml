@@ -1,0 +1,65 @@
+name: Video del giorno
+
+# Ogni mattina genera il video dell'episodio con la data di oggi (episodi/AAAA-MM-GG-*.json)
+# e lo pubblica come "release": dal telefono basta aprire la pagina Releases e scaricare l'mp4.
+on:
+  schedule:
+    - cron: "17 5 * * *" # 06:17 in Italia d'inverno, 07:17 d'estate
+  workflow_dispatch:
+    inputs:
+      episodio:
+        description: "File da generare (es. episodi/2026-11-20-quiz-tre-indovinelli.json). Vuoto = quello di oggi."
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: video-del-giorno
+  cancel-in-progress: false
+
+jobs:
+  genera:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Programmi necessari (ffmpeg, emoji)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+
+      - name: Dipendenze e browser per disegnare i fotogrammi
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Genera il video
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+          EPISODIO: ${{ github.event.inputs.episodio }}
+        run: |
+          if [ -n "$EPISODIO" ]; then
+            node src/genera.mjs "$EPISODIO"
+          else
+            node src/genera.mjs --oggi
+          fi
+
+      - name: Pubblica come release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for video in uscita/*.mp4; do
+            nome=$(basename "$video" .mp4)
+            descrizione="uscita/$nome.txt"
+            gh release delete "$nome" --yes --cleanup-tag 2>/dev/null || true
+            gh release create "$nome" "$video" "$descrizione" \
+              --title "$nome" --notes-file "$descrizione" --target "$GITHUB_SHA"
+          done
