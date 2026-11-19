@@ -119,8 +119,8 @@ jobs:
         env:
           # Motore della voce: kokoro (gratis, predefinito), piper (gratis) o elevenlabs (a crediti).
           VOCE_MOTORE: ${{ vars.VOCE_MOTORE || 'kokoro' }}
-          VOCE: ${{ vars.VOCE }}
-          VOCE_VELOCITA: ${{ vars.VOCE_VELOCITA }}
+          VOCE: ${{ vars.VOCE || 'im_nicola' }}
+          VOCE_VELOCITA: ${{ vars.VOCE_VELOCITA || '1.0' }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
           EPISODIO: ${{ matrix.episodio }}

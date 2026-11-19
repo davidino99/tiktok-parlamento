@@ -1,5 +1,5 @@
 // Voce narrante. Motori disponibili (variabile VOCE_MOTORE):
-//   kokoro      gratis, open source (Apache 2.0), gira sulla macchina: voci it "if_sara", "im_nicola"
+//   kokoro      gratis, open source (Apache 2.0), gira sulla macchina: voci it "im_nicola" (predefinita), "if_sara"
 //   piper       gratis, open source, gira sulla macchina: voci "it_IT-paola-medium", "it_IT-riccardo-x_low"
 //   elevenlabs  a pagamento oltre la quota gratuita, serve ELEVENLABS_API_KEY; dà i tempi esatti di ogni parola
 //   nessuna     video senza voce (stima dei tempi): utile per le prove
@@ -28,11 +28,11 @@ export function voceDisponibile() {
 
 function voce() {
   if (process.env.VOCE) return process.env.VOCE;
-  return { kokoro: "if_sara", piper: "it_IT-paola-medium", elevenlabs: process.env.ELEVENLABS_VOICE_ID || "JBFqnCBsd6RMkjVDRZzb" }[motore()];
+  return { kokoro: "im_nicola", piper: "it_IT-paola-medium", elevenlabs: process.env.ELEVENLABS_VOICE_ID || "JBFqnCBsd6RMkjVDRZzb" }[motore()];
 }
 
 function velocita() {
-  return parseFloat(process.env.VOCE_VELOCITA || (motore() === "elevenlabs" ? "1.08" : "1.1"));
+  return parseFloat(process.env.VOCE_VELOCITA || ({ elevenlabs: "1.08", piper: "1.1" }[motore()] || "1.0"));
 }
 
 export function durataAudio(file) {
