@@ -1,0 +1,458 @@
+{
+ "sfinge": {
+  "file": "assets/immagini/sfinge.jpg",
+  "credito": "Foto: Petar Milošević · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "Petar Milošević",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_of_Giza_(%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84).jpg",
+  "titolo": "File:Great Sphinx of Giza (أبو الهول).jpg"
+ },
+ "sfinge-roberts": {
+  "file": "assets/immagini/sfinge-roberts.jpg",
+  "credito": "Immagine: David Roberts · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "David Roberts",
+  "pagina": "https://commons.wikimedia.org/wiki/File:The_Great_Sphinx,_Pyramids_of_Gizeh-1839)_by_David_Roberts,_RA.jpg",
+  "titolo": "File:The Great Sphinx, Pyramids of Gizeh-1839) by David Roberts, RA.jpg"
+ },
+ "squalo": {
+  "file": "assets/immagini/squalo.jpg",
+  "credito": "Foto: Terry Goss · CC BY 2.5",
+  "licenza": "CC BY 2.5",
+  "autore": "Terry Goss",
+  "pagina": "https://commons.wikimedia.org/wiki/File:White_shark.jpg",
+  "titolo": "File:White shark.jpg"
+ },
+ "cleopatra": {
+  "file": "assets/immagini/cleopatra.jpg",
+  "credito": "Foto: José Luiz · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "José Luiz",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bust_of_Cleopatra_VII_-_Altes_Museum_-_Berlin_-_Germany_2017_(2).jpg",
+  "titolo": "File:Bust of Cleopatra VII - Altes Museum - Berlin - Germany 2017 (2).jpg"
+ },
+ "polpo-alto": {
+  "file": "assets/immagini/polpo-alto.jpg",
+  "credito": "Foto: Diego Delso · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "Diego Delso",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Pulpo_com%C3%BAn_(Octopus_vulgaris),_franja_marina_Teno-Rasca,_Tenerife,_Espa%C3%B1a,_2022-01-08,_DD_53.jpg",
+  "titolo": "File:Pulpo común (Octopus vulgaris), franja marina Teno-Rasca, Tenerife, España, 2022-01-08, DD 53.jpg"
+ },
+ "polpo": {
+  "file": "assets/immagini/polpo.jpg",
+  "credito": "Foto: Diego Delso · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "Diego Delso",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Pulpo_com%C3%BAn_(Octopus_vulgaris),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2020-07-21,_DD_33.jpg",
+  "titolo": "File:Pulpo común (Octopus vulgaris), Parque natural de la Arrábida, Portugal, 2020-07-21, DD 33.jpg"
+ },
+ "tardigrado": {
+  "file": "assets/immagini/tardigrado.jpg",
+  "credito": "Foto: Schokraie et al. (2012) · CC BY 2.5",
+  "licenza": "CC BY 2.5",
+  "autore": "Schokraie et al. (2012)",
+  "pagina": "https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png",
+  "titolo": "File:SEM image of Milnesium tardigradum in active state - journal.pone.0045682.g001-2.png"
+ },
+ "medusa": {
+  "file": "assets/immagini/medusa.jpg",
+  "credito": "Foto: Dr. Karen J. Osborn · CC0",
+  "licenza": "CC0",
+  "autore": "Dr. Karen J. Osborn",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Turritopsisdohrnii.jpeg",
+  "titolo": "File:Turritopsisdohrnii.jpeg"
+ },
+ "radiografia": {
+  "file": "assets/immagini/radiografia.jpg",
+  "credito": "Foto: Wellcome Collection · CC BY 4.0",
+  "licenza": "CC BY 4.0",
+  "autore": "Wellcome Collection",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Two_hands,_viewed_through_x-ray._Photoprint_from_radiograph_Wellcome_V0029554.jpg",
+  "titolo": "File:Two hands, viewed through x-ray. Photoprint from radiograph Wellcome V0029554.jpg"
+ },
+ "batteri": {
+  "file": "assets/immagini/batteri.jpg",
+  "credito": "Foto: Eric Erbe, USDA · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Eric Erbe, USDA",
+  "pagina": "https://commons.wikimedia.org/wiki/File:E_coli_at_10000x,_original.jpg",
+  "titolo": "File:E coli at 10000x, original.jpg"
+ },
+ "cervello": {
+  "file": "assets/immagini/cervello.jpg",
+  "credito": "Immagine: Erald Mecani · CC BY-SA 3.0",
+  "licenza": "CC BY-SA 3.0",
+  "autore": "Erald Mecani",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Human_brain.jpg",
+  "titolo": "File:Human brain.jpg"
+ },
+ "femore": {
+  "file": "assets/immagini/femore.jpg",
+  "credito": "Foto: MAKY.OREL · CC0",
+  "licenza": "CC0",
+  "autore": "MAKY.OREL",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+  "titolo": "File:Femur - anterior, posterior.jpg"
+ },
+ "mammut": {
+  "file": "assets/immagini/mammut.jpg",
+  "credito": "Immagine: Mauricio Antón · CC BY 2.5",
+  "licenza": "CC BY 2.5",
+  "autore": "Mauricio Antón",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ice_age_fauna_of_northern_Spain_-_Mauricio_Ant%C3%B3n.jpg",
+  "titolo": "File:Ice age fauna of northern Spain - Mauricio Antón.jpg"
+ },
+ "oxford": {
+  "file": "assets/immagini/oxford.jpg",
+  "credito": "Foto: Julian Herzog · CC BY 4.0",
+  "licenza": "CC BY 4.0",
+  "autore": "Julian Herzog",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Radcliffe_Camera_Oxford_2018_04.jpg",
+  "titolo": "File:Radcliffe Camera Oxford 2018 04.jpg"
+ },
+ "napoleone": {
+  "file": "assets/immagini/napoleone.jpg",
+  "credito": "Immagine: Jacques-Louis David · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Jacques-Louis David",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+  "titolo": "File:Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project.jpg"
+ },
+ "banane": {
+  "file": "assets/immagini/banane.jpg",
+  "credito": "Foto: Wilfredor · CC0",
+  "licenza": "CC0",
+  "autore": "Wilfredor",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bunch_of_bananas_on_sale.jpg",
+  "titolo": "File:Bunch of bananas on sale.jpg"
+ },
+ "fragola": {
+  "file": "assets/immagini/fragola.jpg",
+  "credito": "Foto: rich caulton · CC BY 4.0",
+  "licenza": "CC BY 4.0",
+  "autore": "rich caulton",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Strawberry_surface_close_up_macro.jpg",
+  "titolo": "File:Strawberry surface close up macro.jpg"
+ },
+ "arachidi": {
+  "file": "assets/immagini/arachidi.jpg",
+  "credito": "Foto: Ivar Leidus · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "Ivar Leidus",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Peanuts_(Arachis_hypogaea)_-_in_shell,_shell_cracked_open,_shelled,_peeled.jpg",
+  "titolo": "File:Peanuts (Arachis hypogaea) - in shell, shell cracked open, shelled, peeled.jpg"
+ },
+ "onde": {
+  "file": "assets/immagini/onde.jpg",
+  "credito": "Foto: Thomas Fuhrmann · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "Thomas Fuhrmann",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Waves_of_Luputhana_11.jpg",
+  "titolo": "File:Waves of Luputhana 11.jpg"
+ },
+ "trieste": {
+  "file": "assets/immagini/trieste.jpg",
+  "credito": "Foto: U.S. Navy · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "U.S. Navy",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bathyscaphe_Trieste.jpg",
+  "titolo": "File:Bathyscaphe Trieste.jpg"
+ },
+ "fondale": {
+  "file": "assets/immagini/fondale.jpg",
+  "credito": "Foto: Tom Patterson · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Tom Patterson",
+  "pagina": "https://commons.wikimedia.org/wiki/File:North_Atlantic_seafloor_with_text.jpg",
+  "titolo": "File:North Atlantic seafloor with text.jpg"
+ },
+ "balenottera": {
+  "file": "assets/immagini/balenottera.jpg",
+  "credito": "Foto: AWeith · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "AWeith",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Blow_of_a_blue_whale_in_the_Arctic_sea.jpg",
+  "titolo": "File:Blow of a blue whale in the Arctic sea.jpg"
+ },
+ "foresta": {
+  "file": "assets/immagini/foresta.jpg",
+  "credito": "Foto: Nickpdx · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Nickpdx",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Opal_creek_old_growth_2.JPG",
+  "titolo": "File:Opal creek old growth 2.JPG"
+ },
+ "tassili": {
+  "file": "assets/immagini/tassili.jpg",
+  "credito": "Foto: Wikimedia Commons · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Wikimedia Commons",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Cave_painting_from_the_Tassili_n%27Ajjer_mountains.jpg",
+  "titolo": "File:Cave painting from the Tassili n'Ajjer mountains.jpg"
+ },
+ "chimborazo": {
+  "file": "assets/immagini/chimborazo.jpg",
+  "credito": "Foto: David Torres Costales · CC BY-SA 3.0",
+  "licenza": "CC BY-SA 3.0",
+  "autore": "David Torres Costales",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_-_Chimborazo,_Ecuador.jpg",
+  "titolo": "File:Vicuña - Chimborazo, Ecuador.jpg"
+ },
+ "dyatlov-tenda": {
+  "file": "assets/immagini/dyatlov-tenda.jpg",
+  "credito": "Foto: Archivio dell'inchiesta (1959) · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Archivio dell'inchiesta (1959)",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Dyatlov_Pass_incident_02.jpg",
+  "titolo": "File:Dyatlov Pass incident 02.jpg"
+ },
+ "dyatlov-volti": {
+  "file": "assets/immagini/dyatlov-volti.jpg",
+  "credito": "Foto: Dmitrij Nikišin · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Dmitrij Nikišin",
+  "pagina": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%BE%D1%82%D0%BE_%D1%87%D0%BB%D0%B5%D0%BD%D0%BE%D0%B2_%D1%82%D1%83%D1%80%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%8B_%D0%98%D0%B3%D0%BE%D1%80%D1%8F_%D0%94%D1%8F%D1%82%D0%BB%D0%BE%D0%B2%D0%B0.jpg",
+  "titolo": "File:Фото членов тургруппы Игоря Дятлова.jpg"
+ },
+ "dyatlov-memoriale": {
+  "file": "assets/immagini/dyatlov-memoriale.jpg",
+  "credito": "Foto: Dmitrij Nikišin · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Dmitrij Nikišin",
+  "pagina": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B4%D1%8F%D1%82%D0%BB%D0%BE%D0%B2%D1%86%D0%B0%D0%BC_%D0%BD%D0%B0_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg",
+  "titolo": "File:Памятник дятловцам на Михайловском кладбище.jpg"
+ },
+ "mary-celeste": {
+  "file": "assets/immagini/mary-celeste.jpg",
+  "credito": "Immagine: Autore sconosciuto (1861) · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Autore sconosciuto (1861)",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Mary_Celeste_as_Amazon_in_1861.jpg",
+  "titolo": "File:Mary Celeste as Amazon in 1861.jpg"
+ },
+ "mary-celeste-incisione": {
+  "file": "assets/immagini/mary-celeste-incisione.jpg",
+  "credito": "Immagine: Wikimedia Commons · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Wikimedia Commons",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Mary_Celeste_engraving.jpg",
+  "titolo": "File:Mary Celeste engraving.jpg"
+ },
+ "barili": {
+  "file": "assets/immagini/barili.jpg",
+  "credito": "Foto: Bernard Spragg · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Bernard Spragg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Barrels._(52254707001).jpg",
+  "titolo": "File:Barrels. (52254707001).jpg"
+ },
+ "voynich-fiori": {
+  "file": "assets/immagini/voynich-fiori.jpg",
+  "credito": "Foto: Beinecke Library, Yale · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Beinecke Library, Yale",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Voynich_Manuscript_(32).jpg",
+  "titolo": "File:Voynich Manuscript (32).jpg"
+ },
+ "voynich-libro": {
+  "file": "assets/immagini/voynich-libro.jpg",
+  "credito": "Foto: Beinecke Library, Yale · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Beinecke Library, Yale",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Voynich_manuscript_(head).jpg",
+  "titolo": "File:Voynich manuscript (head).jpg"
+ },
+ "voynich-dorso": {
+  "file": "assets/immagini/voynich-dorso.jpg",
+  "credito": "Foto: Beinecke Library, Yale · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Beinecke Library, Yale",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Voynich_manuscript_(tail).jpg",
+  "titolo": "File:Voynich manuscript (tail).jpg"
+ },
+ "voynich-piante": {
+  "file": "assets/immagini/voynich-piante.jpg",
+  "credito": "Foto: Beinecke Library, Yale · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Beinecke Library, Yale",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Voynich_Manuscript_(177).jpg",
+  "titolo": "File:Voynich Manuscript (177).jpg"
+ },
+ "wow": {
+  "file": "assets/immagini/wow.jpg",
+  "credito": "Foto: Big Ear Radio Observatory/NAAPO · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Big Ear Radio Observatory/NAAPO",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wow_signal.jpg",
+  "titolo": "File:Wow signal.jpg"
+ },
+ "wow-tabulato": {
+  "file": "assets/immagini/wow-tabulato.jpg",
+  "credito": "Foto: Big Ear Radio Observatory/NAAPO · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Big Ear Radio Observatory/NAAPO",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wow_signal_(large).jpg",
+  "titolo": "File:Wow signal (large).jpg"
+ },
+ "via-lattea-monti": {
+  "file": "assets/immagini/via-lattea-monti.jpg",
+  "credito": "Foto: oliwok · CC BY 4.0",
+  "licenza": "CC BY 4.0",
+  "autore": "oliwok",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Milky_way_in_Elbrus.jpg",
+  "titolo": "File:Milky way in Elbrus.jpg"
+ },
+ "via-lattea": {
+  "file": "assets/immagini/via-lattea.jpg",
+  "credito": "Foto: ESO/S. Guisard · CC BY 4.0",
+  "licenza": "CC BY 4.0",
+  "autore": "ESO/S. Guisard",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Guisard_-_Milky_Way.jpg",
+  "titolo": "File:Guisard - Milky Way.jpg"
+ },
+ "pietra-scia": {
+  "file": "assets/immagini/pietra-scia.jpg",
+  "credito": "Foto: Lgcharlot · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "Lgcharlot",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Racetrack_Playa_in_Death_Valley_National_Park.jpg",
+  "titolo": "File:Racetrack Playa in Death Valley National Park.jpg"
+ },
+ "racetrack": {
+  "file": "assets/immagini/racetrack.jpg",
+  "credito": "Foto: Daniel Mayer (mav) · CC BY-SA 3.0",
+  "licenza": "CC BY-SA 3.0",
+  "autore": "Daniel Mayer (mav)",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Death_Valley_NP_-_Racetrack_Playa_-_sailing_stone_race.JPG",
+  "titolo": "File:Death Valley NP - Racetrack Playa - sailing stone race.JPG"
+ },
+ "pietra-vicino": {
+  "file": "assets/immagini/pietra-vicino.jpg",
+  "credito": "Foto: Daniel Mayer (mav) · CC BY-SA 3.0",
+  "licenza": "CC BY-SA 3.0",
+  "autore": "Daniel Mayer (mav)",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Death_Valley_NP_-_Racetrack_Playa_-_sailing_stone_-_closeup.JPG",
+  "titolo": "File:Death Valley NP - Racetrack Playa - sailing stone - closeup.JPG"
+ },
+ "pietre-scie": {
+  "file": "assets/immagini/pietre-scie.jpg",
+  "credito": "Foto: Annette Teng · CC BY 3.0",
+  "licenza": "CC BY 3.0",
+  "autore": "Annette Teng",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Racetrack_2004_-_panoramio.jpg",
+  "titolo": "File:Racetrack 2004 - panoramio.jpg"
+ },
+ "earhart": {
+  "file": "assets/immagini/earhart.jpg",
+  "credito": "Foto: Underwood & Underwood · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Underwood & Underwood",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra,_small.jpg",
+  "titolo": "File:Amelia Earhart standing under nose of her Lockheed Model 10-E Electra, small.jpg"
+ },
+ "earhart-electra": {
+  "file": "assets/immagini/earhart-electra.jpg",
+  "credito": "Foto: Smithsonian Institution · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "Smithsonian Institution",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Amelia_Earhart_-_GPN-2002-000211.jpg",
+  "titolo": "File:Amelia Earhart - GPN-2002-000211.jpg"
+ },
+ "earhart-cabina": {
+  "file": "assets/immagini/earhart-cabina.jpg",
+  "credito": "Foto: New York World-Telegram · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "New York World-Telegram",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Amelia_earhart_1937.jpg",
+  "titolo": "File:Amelia earhart 1937.jpg"
+ },
+ "howland": {
+  "file": "assets/immagini/howland.jpg",
+  "credito": "Foto: USFWS · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "USFWS",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Howland_Island_NWR.jpg",
+  "titolo": "File:Howland Island NWR.jpg"
+ },
+ "nikumaroro": {
+  "file": "assets/immagini/nikumaroro.jpg",
+  "credito": "Foto: NASA · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "NASA",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Nikumaroro_Island.jpg",
+  "titolo": "File:Nikumaroro Island.jpg"
+ },
+ "croatoan": {
+  "file": "assets/immagini/croatoan.jpg",
+  "credito": "Immagine: Internet Archive Book Images · CC0",
+  "licenza": "CC0",
+  "autore": "Internet Archive Book Images",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Croatoan_Roanoke_image_from_page_258_of_Coast_watch_(1979).jpg",
+  "titolo": "File:Croatoan Roanoke image from page 258 of Coast watch (1979).jpg"
+ },
+ "croatoan-incisione": {
+  "file": "assets/immagini/croatoan-incisione.jpg",
+  "credito": "Immagine: W. L. Sheppard, W. J. Linton · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "W. L. Sheppard, W. J. Linton",
+  "pagina": "https://commons.wikimedia.org/wiki/File:William_Ludwell_Sheppard_%26_William_James_Linton_-_CROATOAN,_The_Lost_Colony_(John_White).jpg",
+  "titolo": "File:William Ludwell Sheppard & William James Linton - CROATOAN, The Lost Colony (John White).jpg"
+ },
+ "virginea-pars": {
+  "file": "assets/immagini/virginea-pars.jpg",
+  "credito": "Immagine: John White · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "John White",
+  "pagina": "https://commons.wikimedia.org/wiki/File:John_White_-_La_Virginea_Pars,_map_of_the_E_coast_of_N_America_from_Chesapeake_bay_to_Cape_Lookout,_1906,0509.1.3.jpg",
+  "titolo": "File:John White - La Virginea Pars, map of the E coast of N America from Chesapeake bay to Cape Lookout, 1906,0509.1.3.jpg"
+ },
+ "virginia-dare": {
+  "file": "assets/immagini/virginia-dare.jpg",
+  "credito": "Immagine: William Ludwell Sheppard · pubblico dominio",
+  "licenza": "pubblico dominio",
+  "autore": "William Ludwell Sheppard",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Baptism_of_Virginia_Dare.jpeg",
+  "titolo": "File:Baptism of Virginia Dare.jpeg"
+ },
+ "nazca-colibri": {
+  "file": "assets/immagini/nazca-colibri.jpg",
+  "credito": "Foto: PsamatheM · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "PsamatheM",
+  "pagina": "https://commons.wikimedia.org/wiki/File:04-Nazca_Lines-nX-21.jpg",
+  "titolo": "File:04-Nazca Lines-nX-21.jpg"
+ },
+ "nazca-colibri-2": {
+  "file": "assets/immagini/nazca-colibri-2.jpg",
+  "credito": "Foto: Unukorno · CC BY 3.0",
+  "licenza": "CC BY 3.0",
+  "autore": "Unukorno",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Nazca_Lines_Hummingbird_(cropped).jpg",
+  "titolo": "File:Nazca Lines Hummingbird (cropped).jpg"
+ },
+ "nazca-ragno": {
+  "file": "assets/immagini/nazca-ragno.jpg",
+  "credito": "Foto: PsamatheM · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "PsamatheM",
+  "pagina": "https://commons.wikimedia.org/wiki/File:04-Nazca_Lines-nX-33.jpg",
+  "titolo": "File:04-Nazca Lines-nX-33.jpg"
+ },
+ "nazca-astronauta": {
+  "file": "assets/immagini/nazca-astronauta.jpg",
+  "credito": "Foto: Wikimedia Commons · CC BY-SA 2.5 es",
+  "licenza": "CC BY-SA 2.5 es",
+  "autore": "Wikimedia Commons",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Nazca-lineas-astronauta-c01.jpg",
+  "titolo": "File:Nazca-lineas-astronauta-c01.jpg"
+ },
+ "nazca-scimmia": {
+  "file": "assets/immagini/nazca-scimmia.jpg",
+  "credito": "Foto: PsamatheM · CC BY-SA 4.0",
+  "licenza": "CC BY-SA 4.0",
+  "autore": "PsamatheM",
+  "pagina": "https://commons.wikimedia.org/wiki/File:04-Nazca_Lines-nX-13.jpg",
+  "titolo": "File:04-Nazca Lines-nX-13.jpg"
+ }
+}

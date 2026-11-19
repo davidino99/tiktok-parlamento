@@ -1,0 +1,68 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 cose assurde sul tuo corpo",
+  "descrizione": "3 cose vere sul tuo corpo che sembrano inventate 🧬",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "corpoumano"
+  ],
+  "commentoFissato": "Quale non sapevi? 1, 2 o 3 👇",
+  "fonti": [
+    "Cellule umane: circa 37.200 miliardi (Bianconi et al., Annals of Human Biology 2013).",
+    "Batteri: circa 38.000 miliardi, rapporto vicino a 1:1 (Sender, Fuchs, Milo, PLOS Biology 2016).",
+    "Cervello: circa 2% del peso corporeo, circa 20% del consumo energetico a riposo.",
+    "Osso compatto: resistenza a compressione circa 170 MPa; calcestruzzo comune circa 20–40 MPa."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🧬",
+      "testo": "3 cose sul tuo corpo che sembrano inventate",
+      "sotto": "Sono tutte vere",
+      "voce": "Tre cose sul tuo corpo che sembrano inventate. E invece sono tutte vere.",
+      "immagine": "assets/immagini/radiografia.jpg",
+      "credito": "Foto: Wellcome Collection · CC BY 4.0"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 1",
+      "emoji": "🦠",
+      "grande": "1 a 1",
+      "testo": "Nel tuo corpo ci sono tanti batteri quante cellule.",
+      "voce": "Uno. Sei fatto di circa trentasettemila miliardi di cellule. E ospiti quasi altrettanti batteri. Più o meno uno a uno.",
+      "immagine": "assets/immagini/batteri.jpg",
+      "credito": "Foto: Eric Erbe, USDA · pubblico dominio"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 2",
+      "emoji": "🧠",
+      "grande": "20%",
+      "testo": "Il cervello pesa il 2% del corpo ma usa il 20% dell'energia.",
+      "voce": "Due. Il cervello pesa circa il due per cento del tuo corpo. Ma da solo consuma circa un quinto della tua energia.",
+      "immagine": "assets/immagini/cervello.jpg",
+      "credito": "Immagine: Erald Mecani · CC BY-SA 3.0"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 3",
+      "emoji": "🦴",
+      "grande": "Più del cemento",
+      "testo": "Le tue ossa reggono la compressione meglio del calcestruzzo.",
+      "voce": "Tre. Se lo schiacci, un osso resiste più del calcestruzzo dei palazzi. Per lo stesso spessore, regge molto di più.",
+      "immagine": "assets/immagini/femore.jpg",
+      "credito": "Foto: MAKY.OREL · CC0"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale non sapevi?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale non sapevi? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

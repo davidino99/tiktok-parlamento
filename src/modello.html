@@ -99,6 +99,26 @@
   #sottotitoli span.detta { opacity: 1; }
   #sottotitoli span.ora { opacity: 1; color: var(--accento); }
 
+  /* Immagini: a tutto schermo (apertura) o in un riquadro, sempre con un lento zoom. */
+  .foto-sfondo { position: absolute; inset: 0; opacity: 0; overflow: hidden; }
+  .foto-sfondo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; will-change: transform; }
+  .foto-sfondo::after { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.25) 28%, rgba(0,0,0,.35) 55%, rgba(0,0,0,.85) 100%); }
+  .riquadro { position: relative; width: 100%; height: 600px; flex: none; border-radius: 36px; overflow: hidden;
+              box-shadow: 0 30px 80px rgba(0,0,0,.55); border: 3px solid rgba(255,255,255,.14); background: #000; }
+  .riquadro img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; will-change: transform; }
+  .scena.con-foto { justify-content: flex-start; gap: 26px; }
+  .scena.con-foto .riquadro { height: 480px; }
+  .scena.con-foto .grande { font-size: 100px; }
+  .scena.con-foto .titolo { font-size: 80px; }
+  .scena.con-foto .medio { font-size: 54px; }
+  body.mistero .foto-sfondo img, body.mistero .riquadro img { filter: grayscale(.55) sepia(.2) contrast(1.12) brightness(.85); }
+  body.curiosita .foto-sfondo img, body.curiosita .riquadro img { filter: saturate(1.12) contrast(1.05); }
+  .credito { position: absolute; right: 18px; bottom: 14px; max-width: 90%; font-weight: 600; font-size: 22px;
+             color: rgba(255,255,255,.85); background: rgba(0,0,0,.45); padding: 4px 12px; border-radius: 10px;
+             white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .foto-sfondo .credito { bottom: auto; top: 236px; right: 70px; z-index: 1; }
+
   #lampo { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
   body.mistero #lampo { background: #ff2020; }
 </style>
@@ -107,6 +127,7 @@
 <div id="palco">
   <div class="macchia" id="m1"></div>
   <div class="macchia" id="m2"></div>
+  <div id="sfondi"></div>
   <div id="grana"></div>
   <div id="scene"></div>
   <div id="vignetta"></div>
@@ -138,13 +159,31 @@ function crea(tag, classe, testo) {
   return el;
 }
 
+function foto(d, classe) {
+  const box = crea("div", classe);
+  const img = crea("img");
+  img.src = "../" + d.immagine;
+  if (d.posizione) img.style.objectPosition = d.posizione;
+  box.append(img);
+  if (d.credito) box.append(crea("div", "credito", d.credito));
+  return box;
+}
+
 function costruisciScena(s, i, tutte) {
   const el = crea("div", "scena");
   const d = s.dati;
+  const stile = d.immagine ? (d.immagineStile || (d.tipo === "apertura" || d.tipo === "chiusura" ? "sfondo" : "riquadro")) : null;
+  if (stile === "sfondo") {
+    s.sfondo = foto(d, "foto-sfondo");
+    document.getElementById("sfondi").append(s.sfondo);
+  }
+  const riquadro = stile === "riquadro" ? foto(d, "riquadro entra") : null;
+  if (riquadro) el.classList.add("con-foto");
+  const emoji = d.immagine ? null : d.emoji;
   switch (d.tipo) {
     case "apertura":
       el.classList.add("centro");
-      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      if (emoji) el.append(crea("div", "emoji entra", emoji));
       el.append(crea("div", "titolo entra", d.testo));
       if (d.sotto) el.append(crea("div", "piccolo entra", d.sotto));
       break;
@@ -189,19 +228,21 @@ function costruisciScena(s, i, tutte) {
     case "fatto":
       el.classList.add("centro");
       if (d.etichetta) el.append(crea("div", "etichetta entra", d.etichetta));
-      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      if (riquadro) el.append(riquadro);
+      if (emoji) el.append(crea("div", "emoji entra", emoji));
       if (d.grande) el.append(crea("div", "grande accento entra", d.grande));
       if (d.testo) el.append(crea("div", "medio entra", d.testo));
       break;
     case "racconto":
       if (d.etichetta) el.append(crea("div", "etichetta entra", d.etichetta));
-      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      if (riquadro) el.append(riquadro);
+      if (emoji) el.append(crea("div", "emoji entra", emoji));
       if (d.grande) el.append(crea("div", "titolo accento entra", d.grande));
       if (d.testo) el.append(crea("div", "medio entra", d.testo));
       break;
     case "chiusura":
       el.classList.add("centro");
-      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      if (emoji) el.append(crea("div", "emoji entra", emoji));
       el.append(crea("div", "titolo entra", d.testo));
       if (d.sotto) el.append(crea("div", "piccolo accento entra", d.sotto));
       break;
@@ -209,7 +250,7 @@ function costruisciScena(s, i, tutte) {
   return el;
 }
 
-window.prepara = function (episodio, linea) {
+window.prepara = async function (episodio, linea) {
   document.body.className = episodio.genere;
   document.querySelector("#marchio span").textContent = episodio.marchio || MARCHI[episodio.genere] || "";
   durataTotale = linea.durata;
@@ -257,6 +298,9 @@ window.prepara = function (episodio, linea) {
     const t = crea("div", "tacca"); const i = crea("i"); t.append(i); barra.append(t);
     segmenti.push({ ...g, el: i });
   });
+
+  const immagini = [...document.images];
+  await Promise.all(immagini.map((img) => img.decode().catch(() => { throw new Error("Immagine non caricata: " + img.src); })));
 };
 
 let bloccoMostrato = -1;
@@ -274,7 +318,17 @@ window.frame = function (t) {
     const lt = t - s.inizio, d = s.fine - s.inizio;
     const attiva = t >= s.inizio && t < s.fine;
     s.el.style.opacity = attiva ? "1" : "0";
+    if (s.sfondo) s.sfondo.style.opacity = attiva ? String(morbido(limita((t - s.inizio) / 0.35))) : "0";
     if (!attiva) continue;
+
+    // Zoom lento (effetto Ken Burns), in una direzione diversa a ogni scena.
+    const verso = scena.indexOf(s) % 2 ? -1 : 1;
+    const avanz = limita(lt / d);
+    s.el.querySelectorAll(".riquadro img").forEach((img) => {
+      img.style.transform = `scale(${1.06 + 0.12 * avanz}) translateX(${verso * (avanz - 0.5) * 30}px)`;
+    });
+    if (s.sfondo) s.sfondo.querySelector("img").style.transform =
+      `scale(${1.08 + 0.14 * avanz}) translate(${verso * (avanz - 0.5) * 40}px, ${(0.5 - avanz) * 30}px)`;
 
     const zoom = 1 + 0.035 * (lt / d);              // lento avvicinamento continuo
     const e = fuori(limita(lt / 0.42));

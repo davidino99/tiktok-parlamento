@@ -1,0 +1,82 @@
+{
+  "genere": "mistero",
+  "titolo": "Il segnale Wow!",
+  "descrizione": "1977: un radiotelescopio capta un segnale dallo spazio per 72 secondi. Non si è mai più ripetuto 📡",
+  "hashtag": [
+    "misteri",
+    "storievere",
+    "misteroirrisolto",
+    "imparacontiktok",
+    "storia",
+    "perte",
+    "spazio",
+    "alieni"
+  ],
+  "commentoFissato": "Alieni o fenomeno naturale? Scrivi la tua 👇",
+  "fonti": [
+    "15 agosto 1977, radiotelescopio Big Ear dell'Ohio State University.",
+    "L'astronomo Jerry Ehman cerchiò la sequenza 6EQUJ5 sul tabulato e scrisse «Wow!».",
+    "Durata di circa 72 secondi (la finestra di osservazione del telescopio); proveniente dalla costellazione del Sagittario; mai più rilevato.",
+    "2024: Méndez e colleghi (Arecibo Wow! project) propongono una nube di idrogeno illuminata da un brillamento di una magnetar; ipotesi non confermata."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "📡",
+      "testo": "72 secondi. Dallo spazio. Mai più ripetuto.",
+      "voce": "Nel 1977 un radiotelescopio capta un segnale dallo spazio. Dura settantadue secondi. E non si ripeterà mai più.",
+      "immagine": "assets/immagini/via-lattea.jpg",
+      "credito": "Foto: ESO/S. Guisard · CC BY 4.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "15 agosto 1977 · Ohio",
+      "grande": "Big Ear",
+      "testo": "Un radiotelescopio che ascolta il cielo, giorno e notte.",
+      "voce": "Ohio, Stati Uniti. Il radiotelescopio Big Ear ascolta il cielo e stampa tutto su lunghi fogli di carta."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Qualche giorno dopo",
+      "grande": "6EQUJ5",
+      "testo": "Un astronomo legge i fogli e vede qualcosa di enorme.",
+      "colpo": true,
+      "voce": "Qualche giorno dopo l'astronomo Jerry Ehman legge i fogli e trova una sequenza: sei, E, Q, U, J, cinque. Un segnale fortissimo, rispetto al rumore di fondo.",
+      "immagine": "assets/immagini/wow-tabulato.jpg",
+      "credito": "Foto: Big Ear Radio Observatory/NAAPO · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Sul foglio",
+      "grande": "«Wow!»",
+      "testo": "Lo cerchia con la penna rossa.",
+      "voce": "La cerchia con la penna e ci scrive accanto una sola parola: Wow. Da allora si chiama così.",
+      "immagine": "assets/immagini/wow.jpg",
+      "credito": "Foto: Big Ear Radio Observatory/NAAPO · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Da allora",
+      "grande": "Silenzio",
+      "testo": "Lo cercano per decenni nella stessa zona del cielo.",
+      "colpo": true,
+      "voce": "Per decenni gli astronomi puntano i telescopi nella stessa zona del cielo, verso il Sagittario. Il segnale non torna mai più.",
+      "immagine": "assets/immagini/via-lattea-monti.jpg",
+      "credito": "Foto: oliwok · CC BY 4.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "2024",
+      "grande": "Una nube di idrogeno?",
+      "testo": "Un'ipotesi naturale, non ancora confermata.",
+      "voce": "Nel 2024 alcuni ricercatori propongono una spiegazione naturale: una nube di idrogeno illuminata all'improvviso da una stella. Ma non è ancora confermata."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Alieni o fenomeno naturale?",
+      "sotto": "Scrivi la tua",
+      "voce": "Secondo te, alieni o fenomeno naturale? Scrivilo nei commenti."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "genere": "mistero",
+  "titolo": "Il libro che nessuno sa leggere",
+  "descrizione": "Un libro di 600 anni scritto in una lingua che nessuno al mondo sa leggere 📜",
+  "hashtag": [
+    "misteri",
+    "storievere",
+    "misteroirrisolto",
+    "imparacontiktok",
+    "storia",
+    "perte",
+    "voynich"
+  ],
+  "commentoFissato": "Secondo te è un codice segreto o uno scherzo? 👇",
+  "fonti": [
+    "Manoscritto Voynich, Beinecke Rare Book & Manuscript Library, Università di Yale (MS 408).",
+    "Datazione al radiocarbonio della pergamena: 1404–1438 (Università dell'Arizona, 2009).",
+    "Prende il nome da Wilfrid Voynich, che lo acquistò nel 1912 vicino a Roma.",
+    "Circa 240 pagine; scrittura e lingua mai decifrate; piante illustrate in gran parte non identificate."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "📜",
+      "testo": "Un libro che nessuno al mondo sa leggere.",
+      "voce": "Esiste un libro di seicento anni che nessuno al mondo sa leggere.",
+      "immagine": "assets/immagini/voynich-fiori.jpg",
+      "credito": "Foto: Beinecke Library, Yale · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "1912 · vicino a Roma",
+      "grande": "Il Voynich",
+      "testo": "Un libraio lo compra tra vecchi manoscritti.",
+      "voce": "Nel 1912 un libraio, Wilfrid Voynich, lo compra vicino a Roma. Da allora porta il suo nome.",
+      "immagine": "assets/immagini/voynich-libro.jpg",
+      "credito": "Foto: Beinecke Library, Yale · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Dentro",
+      "grande": "240 pagine",
+      "testo": "Una scrittura sconosciuta. Piante che non esistono.",
+      "colpo": true,
+      "voce": "Sono circa duecentoquaranta pagine. Scritte con un alfabeto che non somiglia a nessun altro. E disegni di piante che nessun botanico ha mai riconosciuto.",
+      "immagine": "assets/immagini/voynich-piante.jpg",
+      "credito": "Foto: Beinecke Library, Yale · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "2009",
+      "grande": "1404–1438",
+      "testo": "La pergamena è davvero del Quattrocento.",
+      "voce": "Nel 2009 la pergamena viene datata al radiocarbonio: è del primo Quattrocento. Quindi non è un falso moderno.",
+      "immagine": "assets/immagini/voynich-dorso.jpg",
+      "credito": "Foto: Beinecke Library, Yale · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Ancora oggi",
+      "grande": "Nessuno l'ha decifrato",
+      "testo": "Linguisti e crittografi ci provano da oltre un secolo.",
+      "colpo": true,
+      "voce": "Crittografi, linguisti, perfino i decifratori della Seconda guerra mondiale ci hanno provato. Nessuno è mai riuscito a leggerne una sola frase con certezza."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Codice segreto o scherzo?",
+      "sotto": "Scrivi la tua teoria",
+      "voce": "Secondo te è un codice segreto, una lingua perduta, o uno scherzo di seicento anni? Scrivilo nei commenti."
+    }
+  ]
+}

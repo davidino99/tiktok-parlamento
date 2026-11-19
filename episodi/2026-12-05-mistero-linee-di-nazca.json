@@ -1,0 +1,78 @@
+{
+  "genere": "mistero",
+  "titolo": "Le linee di Nazca",
+  "descrizione": "Disegni giganti nel deserto, visibili davvero solo dall'alto. Fatti 2000 anni fa 🏜️ Perché?",
+  "hashtag": [
+    "misteri",
+    "storievere",
+    "misteroirrisolto",
+    "imparacontiktok",
+    "storia",
+    "perte",
+    "nazca",
+    "peru",
+    "archeologia"
+  ],
+  "commentoFissato": "Calendario, rito o messaggio al cielo? Scrivi la tua 👇",
+  "fonti": [
+    "Geoglifi della cultura Nazca (Perù), realizzati tra circa il 500 a.C. e il 500 d.C.; patrimonio UNESCO dal 1994.",
+    "Figure come il colibrì, la scimmia e il ragno, lunghe decine di metri; molte si apprezzano solo dall'alto o dalle colline.",
+    "Sakai et al., PNAS 2024: con l'aiuto dell'intelligenza artificiale scoperti 303 nuovi geoglifi figurativi in sei mesi.",
+    "Le ipotesi sullo scopo includono riti legati all'acqua, percorsi cerimoniali e riferimenti astronomici; nessuna è definitiva."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🏜️",
+      "testo": "Disegni giganti nel deserto. Si vedono solo dall'alto.",
+      "voce": "Nel deserto del Perù ci sono disegni giganti. Per vederli bene, devi guardarli dall'alto.",
+      "immagine": "assets/immagini/nazca-colibri.jpg",
+      "credito": "Foto: PsamatheM · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Perù · 2000 anni fa",
+      "grande": "Le linee di Nazca",
+      "testo": "Tracciate spostando le pietre scure del deserto.",
+      "voce": "Li ha tracciati il popolo Nazca, circa duemila anni fa, spostando le pietre scure del deserto per scoprire la terra chiara sotto.",
+      "immagine": "assets/immagini/nazca-colibri-2.jpg",
+      "credito": "Foto: Unukorno · CC BY 3.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Le figure",
+      "grande": "Colibrì, scimmia, ragno",
+      "testo": "Lunghi decine di metri. Perfetti nelle proporzioni.",
+      "colpo": true,
+      "voce": "Un colibrì, una scimmia, un ragno. Lunghi decine di metri, con proporzioni perfette. Da terra sembrano solo sentieri.",
+      "immagine": "assets/immagini/nazca-ragno.jpg",
+      "credito": "Foto: PsamatheM · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "La domanda",
+      "grande": "Per chi?",
+      "testo": "Nessuno, a quei tempi, poteva volare.",
+      "voce": "Ed ecco la domanda: perché disegnare figure che si capiscono solo dall'alto, se nessuno poteva volare?",
+      "immagine": "assets/immagini/nazca-astronauta.jpg",
+      "credito": "Foto: Wikimedia Commons · CC BY-SA 2.5 es"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "2024",
+      "grande": "303 nuove figure",
+      "testo": "Un'intelligenza artificiale ne trova il doppio in sei mesi.",
+      "colpo": true,
+      "voce": "Nel 2024 un gruppo di ricercatori usa l'intelligenza artificiale sulle foto aeree. In sei mesi scopre trecentotré nuove figure. Quasi il doppio di quelle note.",
+      "immagine": "assets/immagini/nazca-scimmia.jpg",
+      "credito": "Foto: PsamatheM · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Calendario, rito o messaggio al cielo?",
+      "sotto": "Scrivi la tua teoria",
+      "voce": "Calendario, rito per chiedere la pioggia, o messaggio al cielo? Tu cosa pensi? Scrivilo nei commenti."
+    }
+  ]
+}
