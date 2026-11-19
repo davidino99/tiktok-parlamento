@@ -1,0 +1,58 @@
+{
+  "genere": "mistero",
+  "titolo": "Il passo Dyatlov",
+  "descrizione": "1959: nove escursionisti esperti muoiono sugli Urali. La tenda era tagliata dall'interno 🏔️ Tu cosa pensi sia successo?",
+  "hashtag": ["misteri", "storievere", "dyatlov", "misteroirrisolto", "imparacontiktok", "storia"],
+  "commentoFissato": "Valanga, esperimento militare o altro? Scrivi la tua teoria 👇 Parte 2 se arriviamo a 100 commenti.",
+  "fonti": [
+    "Spedizione guidata da Igor' Djatlov, notte tra l'1 e il 2 febbraio 1959, monte Cholatčachl' (Urali settentrionali).",
+    "Tenda tagliata dall'interno; corpi ritrovati tra febbraio e maggio 1959, alcuni senza scarpe e poco vestiti; fratture al cranio e al torace in quattro vittime; a Ljudmila Dubinina mancava la lingua.",
+    "Nel 2019 la procura russa riapre il caso e nel 2020 conclude per una valanga.",
+    "Gaume & Puzrin (2021), Communications Earth & Environment (Nature Portfolio): modello di una piccola valanga a lastroni."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🏔️",
+      "testo": "9 escursionisti esperti. Una tenda tagliata dall'interno.",
+      "voce": "Nel 1959 nove escursionisti esperti muoiono sui monti Urali. E la loro tenda è tagliata… dall'interno."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "1–2 febbraio 1959 · Urali",
+      "grande": "≈ −30 °C",
+      "testo": "Escono di corsa nella notte, quasi senza vestiti.",
+      "voce": "È notte, fanno circa trenta gradi sotto zero. Eppure escono dalla tenda di corsa: senza giacche, alcuni senza scarpe."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Il ritrovamento",
+      "grande": "Ossa fratturate",
+      "testo": "Ferite gravissime, ma quasi nessun segno sulla pelle.",
+      "colpo": true,
+      "voce": "Quando li ritrovano, alcuni hanno il cranio e il torace fratturati, come dopo un incidente d'auto. Ma sulla pelle quasi nessun segno. E a una ragazza manca la lingua."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "60 anni di teorie",
+      "grande": "Yeti? Test militari?",
+      "testo": "Per decenni si ipotizza di tutto.",
+      "voce": "Per sessant'anni si ipotizza di tutto: test militari segreti, infrasuoni, perfino lo yeti."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "2021",
+      "grande": "Una valanga?",
+      "testo": "Uno studio propone una piccola valanga di neve compatta, caduta sulla tenda.",
+      "colpo": true,
+      "voce": "Nel 2021 uno studio su una rivista del gruppo Nature propone una risposta: una piccola valanga di neve compatta, caduta sulla tenda nel cuore della notte."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Ma non convince tutti.",
+      "sotto": "Tu cosa pensi sia successo?",
+      "voce": "Ma non convince tutti. Tu cosa pensi sia successo davvero? Scrivilo nei commenti."
+    }
+  ]
+}

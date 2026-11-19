@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Modello video</title>
+<style>
+  @font-face { font-family: "Titoli"; font-weight: 900; src: url("../assets/fonts/InterDisplay-Black.otf"); }
+  @font-face { font-family: "Titoli"; font-weight: 800; src: url("../assets/fonts/InterDisplay-ExtraBold.otf"); }
+  @font-face { font-family: "Titoli"; font-weight: 600; src: url("../assets/fonts/InterDisplay-SemiBold.otf"); }
+
+  /* Ogni genere ha il suo stile: chi scorre riconosce la serie al primo fotogramma. */
+  :root {
+    --sfondo: #160f3a; --sfondo2: #3a1477; --macchia1: #7b2ff7; --macchia2: #f72585;
+    --accento: #ffd23f; --testo: #ffffff; --tenue: rgba(255,255,255,.72);
+    --carta: rgba(255,255,255,.10); --bordo: rgba(255,255,255,.22);
+    --giusto: #2ee59d; --sbagliato: rgba(255,255,255,.35);
+  }
+  body.curiosita {
+    --sfondo: #04222b; --sfondo2: #0a4a57; --macchia1: #00b4a6; --macchia2: #ff8a3d;
+    --accento: #3ee6c4;
+  }
+  body.mistero {
+    --sfondo: #070709; --sfondo2: #1a0a0d; --macchia1: #5c0b14; --macchia2: #2b1a4a;
+    --accento: #ff3b3b; --tenue: rgba(255,255,255,.62); --carta: rgba(255,255,255,.05);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--sfondo); }
+  body { font-family: "Titoli", "Noto Color Emoji", sans-serif; color: var(--testo); }
+
+  #palco { position: absolute; inset: 0; overflow: hidden;
+           background: radial-gradient(120% 80% at 50% 30%, var(--sfondo2), var(--sfondo)); }
+  .macchia { position: absolute; width: 900px; height: 900px; border-radius: 50%;
+             filter: blur(140px); opacity: .55; will-change: transform; }
+  #m1 { background: var(--macchia1); left: -300px; top: -200px; }
+  #m2 { background: var(--macchia2); right: -350px; bottom: 100px; opacity: .40; }
+  body.mistero .macchia { opacity: .5; }
+  #grana { position: absolute; inset: 0; opacity: 0; pointer-events: none;
+           background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.5'/></svg>"); }
+  body.mistero #grana { opacity: .18; }
+  #vignetta { position: absolute; inset: 0; pointer-events: none;
+              background: radial-gradient(90% 70% at 50% 45%, transparent 55%, rgba(0,0,0,.65)); }
+
+  /* Barra in alto: fa capire quanto manca, così si resta fino alla fine. */
+  #barra { position: absolute; top: 120px; left: 70px; right: 70px; height: 14px;
+           display: flex; gap: 10px; }
+  .tacca { flex: 1; border-radius: 7px; background: rgba(255,255,255,.18); overflow: hidden; }
+  .tacca i { display: block; height: 100%; width: 0; background: var(--accento); border-radius: 7px; }
+
+  #marchio { position: absolute; top: 168px; left: 70px; font-weight: 800; font-size: 40px;
+             letter-spacing: .06em; text-transform: uppercase; color: var(--accento);
+             display: flex; align-items: center; gap: 16px; }
+  #marchio b { display: inline-block; width: 18px; height: 18px; border-radius: 50%; background: var(--accento); }
+
+  /* Area sicura: TikTok copre in basso (descrizione) e a destra (pulsanti). */
+  .scena { position: absolute; left: 70px; right: 150px; top: 270px; height: 1010px;
+           display: flex; flex-direction: column; justify-content: safe center; align-items: flex-start;
+           gap: 34px; opacity: 0; will-change: transform, opacity; }
+  .scena.centro { align-items: center; text-align: center; right: 110px; }
+
+  .grande { font-weight: 900; font-size: 128px; line-height: 1.0; letter-spacing: -.02em; }
+  .titolo { font-weight: 900; font-size: 96px; line-height: 1.04; letter-spacing: -.015em; }
+  .medio  { font-weight: 800; font-size: 68px; line-height: 1.1; }
+  .scena:has(.opzioni) .medio { font-size: 62px; }
+  .piccolo { font-weight: 600; font-size: 46px; line-height: 1.3; color: var(--tenue); }
+  .accento { color: var(--accento); }
+  .emoji { font-size: 230px; line-height: 1; font-family: "Noto Color Emoji", sans-serif; }
+
+  .etichetta { font-weight: 800; font-size: 40px; letter-spacing: .08em; text-transform: uppercase;
+               padding: 14px 28px; border-radius: 999px; background: var(--accento); color: #111; }
+  body.mistero .etichetta { background: transparent; color: var(--accento); border: 3px solid var(--accento); }
+
+  .opzioni { display: flex; flex-direction: column; gap: 18px; width: 100%; }
+  .opzione { display: flex; align-items: center; gap: 28px; padding: 20px 30px; border-radius: 26px;
+             background: var(--carta); border: 3px solid var(--bordo);
+             font-weight: 800; font-size: 56px; }
+  .opzione .lettera { width: 72px; height: 72px; flex: none; border-radius: 50%; display: grid; place-items: center;
+                      background: rgba(255,255,255,.16); font-size: 44px; }
+  .opzione.giusta { background: var(--giusto); border-color: var(--giusto); color: #062b1c; }
+  .opzione.giusta .lettera { background: rgba(0,0,0,.15); }
+  .opzione.spenta { opacity: .35; }
+
+  .timer { position: relative; align-self: center; width: 170px; height: 170px; flex: none; opacity: 0; }
+  .timer svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .timer .fondo { stroke: rgba(255,255,255,.18); }
+  .timer .giro { stroke: var(--accento); stroke-linecap: round; }
+  .timer span { position: absolute; inset: 0; display: grid; place-items: center;
+                font-weight: 900; font-size: 86px; }
+
+  .soluzione { font-weight: 900; font-size: 150px; line-height: 1; color: var(--giusto);
+               text-shadow: 0 10px 50px rgba(46,229,157,.35); }
+
+  /* Sottotitoli parola per parola: metà delle persone guarda senza audio. */
+  #sottotitoli { position: absolute; left: 70px; right: 150px; top: 1310px; min-height: 200px;
+                 display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;
+                 gap: 6px 20px; text-align: center; font-weight: 900; font-size: 66px; line-height: 1.15;
+                 text-shadow: 0 4px 0 rgba(0,0,0,.55), 0 0 30px rgba(0,0,0,.5); }
+  #sottotitoli span { opacity: .55; }
+  #sottotitoli span.detta { opacity: 1; }
+  #sottotitoli span.ora { opacity: 1; color: var(--accento); }
+
+  #lampo { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+  body.mistero #lampo { background: #ff2020; }
+</style>
+</head>
+<body>
+<div id="palco">
+  <div class="macchia" id="m1"></div>
+  <div class="macchia" id="m2"></div>
+  <div id="grana"></div>
+  <div id="scene"></div>
+  <div id="vignetta"></div>
+  <div id="barra"></div>
+  <div id="marchio"><b></b><span></span></div>
+  <div id="sottotitoli"></div>
+  <div id="lampo"></div>
+</div>
+
+<script>
+/*
+ * Il video è una funzione del tempo: frame(t) disegna lo stato esatto al secondo t.
+ * Così ogni fotogramma è identico a ogni esecuzione e l'audio resta sincronizzato.
+ */
+const MARCHI = { quiz: "Quiz del giorno", curiosita: "Lo sapevi che?", mistero: "Misteri" };
+const scena = [];      // { el, inizio, fine, voce: {inizio, fine}, dati }
+let parole = [];       // { el, inizio, fine, scena }
+let durataTotale = 1;
+let segmenti = [];     // per la barra in alto: { inizio, fine, el }
+
+const fuori = (x) => 1 + 2.70158 * Math.pow(x - 1, 3) + 1.70158 * Math.pow(x - 1, 2); // easeOutBack
+const morbido = (x) => 1 - Math.pow(1 - x, 3);
+const limita = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+
+function crea(tag, classe, testo) {
+  const el = document.createElement(tag);
+  if (classe) el.className = classe;
+  if (testo != null) el.textContent = testo;
+  return el;
+}
+
+function costruisciScena(s, i, tutte) {
+  const el = crea("div", "scena");
+  const d = s.dati;
+  switch (d.tipo) {
+    case "apertura":
+      el.classList.add("centro");
+      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      el.append(crea("div", "titolo entra", d.testo));
+      if (d.sotto) el.append(crea("div", "piccolo entra", d.sotto));
+      break;
+    case "domanda": {
+      el.append(crea("div", "etichetta entra", d.etichetta || "Domanda"));
+      el.append(crea("div", d.opzioni ? "medio entra" : "titolo entra", d.testo));
+      if (d.opzioni) {
+        const box = crea("div", "opzioni");
+        d.opzioni.forEach((o, k) => {
+          const r = crea("div", "opzione entra");
+          r.append(crea("div", "lettera", "ABCD"[k]), crea("div", "", o));
+          box.append(r);
+        });
+        el.append(box);
+      }
+      const timer = crea("div", "timer");
+      timer.innerHTML = '<svg viewBox="0 0 120 120"><circle class="fondo" cx="60" cy="60" r="52" stroke-width="12" fill="none"/>' +
+        '<circle class="giro" cx="60" cy="60" r="52" stroke-width="12" fill="none" stroke-dasharray="326.7" stroke-dashoffset="0"/></svg><span></span>';
+      el.append(timer);
+      break;
+    }
+    case "risposta": {
+      const prima = tutte[i - 1] && tutte[i - 1].dati;
+      if (prima && prima.opzioni) {
+        el.append(crea("div", "etichetta entra", "Risposta"));
+        el.append(crea("div", "medio entra", prima.testo));
+        const box = crea("div", "opzioni");
+        prima.opzioni.forEach((o, k) => {
+          const r = crea("div", "opzione " + (k === d.giusta ? "giusta" : "spenta"));
+          r.append(crea("div", "lettera", "ABCD"[k]), crea("div", "", o));
+          box.append(r);
+        });
+        el.append(box);
+      } else {
+        el.classList.add("centro");
+        el.append(crea("div", "etichetta entra", "Risposta"));
+        el.append(crea("div", "soluzione entra", d.testo));
+      }
+      if (d.spiegazione) el.append(crea("div", "piccolo entra", d.spiegazione));
+      break;
+    }
+    case "fatto":
+      el.classList.add("centro");
+      if (d.etichetta) el.append(crea("div", "etichetta entra", d.etichetta));
+      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      if (d.grande) el.append(crea("div", "grande accento entra", d.grande));
+      if (d.testo) el.append(crea("div", "medio entra", d.testo));
+      break;
+    case "racconto":
+      if (d.etichetta) el.append(crea("div", "etichetta entra", d.etichetta));
+      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      if (d.grande) el.append(crea("div", "titolo accento entra", d.grande));
+      if (d.testo) el.append(crea("div", "medio entra", d.testo));
+      break;
+    case "chiusura":
+      el.classList.add("centro");
+      if (d.emoji) el.append(crea("div", "emoji entra", d.emoji));
+      el.append(crea("div", "titolo entra", d.testo));
+      if (d.sotto) el.append(crea("div", "piccolo accento entra", d.sotto));
+      break;
+  }
+  return el;
+}
+
+window.prepara = function (episodio, linea) {
+  document.body.className = episodio.genere;
+  document.querySelector("#marchio span").textContent = episodio.marchio || MARCHI[episodio.genere] || "";
+  durataTotale = linea.durata;
+  const contenitore = document.getElementById("scene");
+  const sotto = document.getElementById("sottotitoli");
+
+  linea.scene.forEach((s, i) => {
+    const el = costruisciScena(s, i, linea.scene);
+    contenitore.append(el);
+    scena.push({ ...s, el, entra: [...el.querySelectorAll(".entra")] });
+
+    // Tempi delle parole: proporzionali alla lunghezza, dentro l'intervallo della voce.
+    const testo = (s.dati.voce || "").trim();
+    if (!testo) return;
+    if (s.parole) { // tempi veri dalla voce sintetizzata
+      s.parole.forEach((p) => parole.push({ testo: p.testo, inizio: s.voce.inizio + p.inizio, fine: s.voce.inizio + p.fine, scena: i }));
+      return;
+    }
+    const lista = testo.split(/\s+/);
+    const pesi = lista.map((p) => p.replace(/[^\p{L}\p{N}]/gu, "").length + 2);
+    const somma = pesi.reduce((a, b) => a + b, 0);
+    let t = s.voce.inizio;
+    const durata = s.voce.fine - s.voce.inizio;
+    lista.forEach((p, k) => {
+      const dt = durata * pesi[k] / somma;
+      parole.push({ testo: p, inizio: t, fine: t + dt, scena: i });
+      t += dt;
+    });
+  });
+
+  // Sottotitoli a blocchi di poche parole, spezzati anche sulla punteggiatura.
+  let blocco = [], blocchi = [];
+  parole.forEach((p, k) => {
+    blocco.push(p);
+    const prossima = parole[k + 1];
+    const fine = /[.!?:;,]$/.test(p.testo) || blocco.length >= 4 || !prossima || prossima.scena !== p.scena;
+    if (fine) { blocchi.push(blocco); blocco = []; }
+  });
+  window.__blocchi = blocchi;
+  window.__sotto = sotto;
+
+  // Barra: un segmento per parte (per i quiz, una tacca per domanda).
+  const barra = document.getElementById("barra");
+  (linea.segmenti || [{ inizio: 0, fine: linea.durata }]).forEach((g) => {
+    const t = crea("div", "tacca"); const i = crea("i"); t.append(i); barra.append(t);
+    segmenti.push({ ...g, el: i });
+  });
+};
+
+let bloccoMostrato = -1;
+window.frame = function (t) {
+  // Sfondo sempre in movimento: niente fotogrammi "fermi".
+  document.getElementById("m1").style.transform = `translate(${Math.sin(t * .45) * 160}px, ${Math.cos(t * .33) * 200}px) scale(${1 + Math.sin(t * .6) * .12})`;
+  document.getElementById("m2").style.transform = `translate(${Math.cos(t * .38) * 180}px, ${Math.sin(t * .29) * 220}px)`;
+  if (document.body.classList.contains("mistero")) {
+    document.getElementById("grana").style.backgroundPosition = `${(t * 997) % 300}px ${(t * 613) % 300}px`;
+    document.getElementById("vignetta").style.opacity = String(0.9 + 0.1 * Math.sin(t * 23) * Math.sin(t * 7));
+  }
+
+  let lampo = 0;
+  for (const s of scena) {
+    const lt = t - s.inizio, d = s.fine - s.inizio;
+    const attiva = t >= s.inizio && t < s.fine;
+    s.el.style.opacity = attiva ? "1" : "0";
+    if (!attiva) continue;
+
+    const zoom = 1 + 0.035 * (lt / d);              // lento avvicinamento continuo
+    const e = fuori(limita(lt / 0.42));
+    s.el.style.transform = `translateY(${(1 - e) * 60}px) scale(${(0.94 + 0.06 * e) * zoom})`;
+    s.entra.forEach((c, k) => {
+      const x = limita((lt - k * 0.12) / 0.4);
+      const ex = fuori(x);
+      c.style.opacity = String(morbido(x));
+      c.style.transform = `translateY(${(1 - ex) * 50}px) scale(${0.9 + 0.1 * ex})`;
+    });
+
+    if (s.dati.tipo === "domanda" && s.timer) {
+      const timer = s.el.querySelector(".timer");
+      const lt2 = t - s.timer.inizio, td = s.timer.fine - s.timer.inizio;
+      if (lt2 >= 0) {
+        const resto = Math.max(0, td - lt2);
+        timer.style.opacity = String(morbido(limita(lt2 / 0.25)));
+        timer.querySelector(".giro").setAttribute("stroke-dashoffset", String(326.7 * (1 - resto / td)));
+        timer.querySelector("span").textContent = String(Math.ceil(resto) || 0);
+        const frazione = lt2 % 1;
+        timer.style.transform = `scale(${1 + 0.12 * Math.max(0, 1 - frazione * 4)})`;
+      } else timer.style.opacity = "0";
+    }
+    if (s.dati.tipo === "risposta" || (s.dati.lampo && lt < 0.3)) lampo = Math.max(lampo, 0.55 * (1 - limita(lt / 0.25)));
+  }
+  document.getElementById("lampo").style.opacity = String(lampo);
+
+  // Sottotitoli
+  const blocchi = window.__blocchi || [];
+  let attuale = -1;
+  for (let k = 0; k < blocchi.length; k++) {
+    const b = blocchi[k];
+    if (t >= b[0].inizio && t < b[b.length - 1].fine + 0.25) attuale = k;
+  }
+  if (attuale !== bloccoMostrato) {
+    const sotto = window.__sotto; sotto.innerHTML = "";
+    if (attuale >= 0) blocchi[attuale].forEach((p) => { const sp = crea("span", "", p.testo); p.el = sp; sotto.append(sp); });
+    bloccoMostrato = attuale;
+  }
+  if (attuale >= 0) blocchi[attuale].forEach((p) => {
+    p.el.className = t >= p.fine ? "detta" : t >= p.inizio ? "ora" : "";
+  });
+
+  for (const g of segmenti) g.el.style.width = `${limita((t - g.inizio) / (g.fine - g.inizio)) * 100}%`;
+};
+</script>
+</body>
+</html>

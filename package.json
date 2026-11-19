@@ -1,0 +1,17 @@
+{
+  "name": "tiktok-video",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Generatore automatico di video verticali per TikTok: quiz, curiosità e misteri con voce narrante.",
+  "scripts": {
+    "video": "node src/genera.mjs",
+    "oggi": "node src/genera.mjs --oggi"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "playwright": "1.63.0"
+  }
+}
