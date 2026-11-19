@@ -19,7 +19,12 @@ Rotazione consigliata: quiz → curiosità → mistero → quiz → …
 3. Il video compare tra le **Releases** del repository, insieme a un `.txt` con descrizione, hashtag e
    commento da fissare. Dal telefono: apri GitHub → repository → Releases → scarica l'mp4.
 
-Il workflow si può anche lanciare a mano da **Actions → Video del giorno → Run workflow**.
+Il workflow si può anche lanciare a mano da **Actions → Video del giorno → Run workflow**:
+
+- spunta **tutti** per generare subito, in parallelo, tutti gli episodi da oggi in poi;
+- oppure scrivi un file nel campo **episodio** per rigenerare solo quello.
+
+Un video già pubblicato in Releases non viene rigenerato la mattina, così i crediti della voce non si consumano due volte.
 
 ## Attivare la voce narrante
 

@@ -2,13 +2,19 @@ name: Video del giorno
 
 # Ogni mattina genera il video dell'episodio con la data di oggi (episodi/AAAA-MM-GG-*.json)
 # e lo pubblica come "release": dal telefono basta aprire la pagina Releases e scaricare l'mp4.
+# Un video già pubblicato non viene rigenerato (per non consumare due volte i crediti della voce),
+# a meno di indicarlo esplicitamente nel campo "episodio".
 on:
   schedule:
     - cron: "17 5 * * *" # 06:17 in Italia d'inverno, 07:17 d'estate
   workflow_dispatch:
     inputs:
+      tutti:
+        description: "Genera subito tutti gli episodi da oggi in poi (salta quelli già pubblicati)"
+        type: boolean
+        default: false
       episodio:
-        description: "File da generare (es. episodi/2026-11-20-quiz-tre-indovinelli.json). Vuoto = quello di oggi."
+        description: "Oppure un solo file da rigenerare (es. episodi/2026-11-20-quiz-tre-indovinelli.json)"
         required: false
 
 permissions:
@@ -19,9 +25,44 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  elenco:
+    runs-on: ubuntu-latest
+    outputs:
+      episodi: ${{ steps.lista.outputs.episodi }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Episodi da generare
+        id: lista
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EPISODIO: ${{ github.event.inputs.episodio }}
+          TUTTI: ${{ github.event.inputs.tutti }}
+        run: |
+          if [ -n "$EPISODIO" ]; then
+            test -f "$EPISODIO" || { echo "::error::File non trovato: $EPISODIO"; exit 1; }
+            echo "episodi=$(jq -cn --arg e "$EPISODIO" '[$e]')" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$TUTTI" = "true" ]; then candidati=$(node src/elenca.mjs --tutti); else candidati=$(node src/elenca.mjs); fi
+          # Salta i video già pubblicati.
+          da_fare=$(for f in $(echo "$candidati" | jq -r '.[]'); do
+            nome=$(basename "$f" .json)
+            if gh release view "$nome" >/dev/null 2>&1; then echo "Già pubblicato: $nome" >&2; else echo "$f"; fi
+          done | jq -R . | jq -cs .)
+          echo "Da generare: $da_fare"
+          echo "episodi=$da_fare" >> "$GITHUB_OUTPUT"
+
   genera:
+    needs: elenco
+    if: needs.elenco.outputs.episodi != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        episodio: ${{ fromJson(needs.elenco.outputs.episodi) }}
     steps:
       - uses: actions/checkout@v5
 
@@ -44,13 +85,8 @@ jobs:
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
-          EPISODIO: ${{ github.event.inputs.episodio }}
-        run: |
-          if [ -n "$EPISODIO" ]; then
-            node src/genera.mjs "$EPISODIO"
-          else
-            node src/genera.mjs --oggi
-          fi
+          EPISODIO: ${{ matrix.episodio }}
+        run: node src/genera.mjs "$EPISODIO"
 
       - name: Pubblica come release
         env:
