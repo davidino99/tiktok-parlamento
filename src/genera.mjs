@@ -50,6 +50,8 @@ function controlla(ep, nome) {
   if (!Array.isArray(ep.scene) || !ep.scene.length) throw new Error(`${nome}: mancano le scene`);
   ep.scene.forEach((s, i) => {
     if (!s.tipo) throw new Error(`${nome}: la scena ${i + 1} non ha "tipo"`);
+    if (s.immagine && !existsSync(path.join(RADICE, s.immagine)))
+      throw new Error(`${nome}: la scena ${i + 1} usa un'immagine che non esiste: ${s.immagine}`);
     if (s.tipo === "risposta" && ep.scene[i - 1]?.opzioni && typeof s.giusta !== "number")
       throw new Error(`${nome}: la scena ${i + 1} deve indicare "giusta" (0 = A, 1 = B, ...)`);
   });
@@ -71,7 +73,7 @@ async function preparaLinea(ep, cartella) {
       fine = timer.fine + 0.1;
     }
     if (dati.durataMinima) fine = Math.max(fine, inizio + dati.durataMinima);
-    scene.push({ dati, inizio, fine, voce, timer, parole: v.parole, fileVoce: v.file });
+    scene.push({ dati, inizio, fine, voce, timer, parole: v.parole, fileVoce: v.file, riusata: v.riusata });
     t = fine;
   }
 
@@ -158,8 +160,10 @@ async function disegnaFotogrammi(ep, linea, cartella, soloIstanti = null) {
 
 function testoDescrizione(ep) {
   const tag = (ep.hashtag || []).map((h) => "#" + h.replace(/^#/, "")).join(" ");
+  const crediti = [...new Set(ep.scene.filter((s) => s.credito).map((s) => s.credito))];
+  const foto = crediti.length ? `\n\n📷 Immagini: ${crediti.join(" · ")}` : "";
   const avvisi = voceDisponibile() ? "\n\n⚙️ Ricorda: attiva \"Contenuto generato dall'AI\" (voce sintetica)." : "";
-  return `${ep.descrizione || ep.titolo || ""}\n\n${tag}\n\n💬 Commento da fissare:\n${ep.commentoFissato || ""}${avvisi}\n`;
+  return `${ep.descrizione || ep.titolo || ""}\n\n${tag}${foto}\n\n💬 Commento da fissare:\n${ep.commentoFissato || ""}${avvisi}\n`;
 }
 
 async function generaUno(fileEpisodio) {
@@ -175,7 +179,8 @@ async function generaUno(fileEpisodio) {
 
   console.log(`▶ ${nome} (${ep.genere}) — voce: ${voceDisponibile() ? "ElevenLabs" : "assente (stima dei tempi)"}`);
   const linea = await preparaLinea(ep, lavoro);
-  console.log(`  durata ${linea.durata.toFixed(1)} s, ${linea.scene.length} scene`);
+  const riusate = linea.scene.filter((s) => s.riusata).length;
+  console.log(`  durata ${linea.durata.toFixed(1)} s, ${linea.scene.length} scene${riusate ? `, voce riusata per ${riusate} scene` : ""}`);
 
   // --anteprima: un fotogramma a metà di ogni scena (o agli istanti indicati), senza video.
   const anteprima = argomenti.find((a) => a.startsWith("--anteprima"));
