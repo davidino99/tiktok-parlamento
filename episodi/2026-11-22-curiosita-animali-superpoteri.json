@@ -1,0 +1,67 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 animali con veri superpoteri",
+  "descrizione": "3 animali con superpoteri veri 🐙 Il terzo può tornare giovane.",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "animali"
+  ],
+  "commentoFissato": "Quale superpotere vorresti tu: 1, 2 o 3? 👇",
+  "fonti": [
+    "Polpo: tre cuori e sangue blu per l'emocianina (base di rame).",
+    "Tardigradi sopravvissuti all'esposizione al vuoto spaziale: missione FOTON-M3, 2007 (Jönsson et al., Current Biology 2008).",
+    "Turritopsis dohrnii: può regredire allo stadio di polipo (transdifferenziazione), detta 'medusa immortale'."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🦸",
+      "testo": "3 animali con superpoteri veri",
+      "sotto": "Il terzo può tornare giovane",
+      "voce": "Tre animali con superpoteri veri. Il terzo può tornare giovane.",
+      "immagine": "assets/immagini/polpo-alto.jpg",
+      "credito": "Foto: Diego Delso · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Superpotere 1",
+      "emoji": "🐙",
+      "grande": "3 cuori",
+      "testo": "Il polpo ha tre cuori e il sangue blu.",
+      "voce": "Uno. Il polpo ha tre cuori. E il suo sangue è blu, perché trasporta l'ossigeno con il rame invece che con il ferro.",
+      "immagine": "assets/immagini/polpo.jpg",
+      "credito": "Foto: Diego Delso · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Superpotere 2",
+      "emoji": "🐻",
+      "grande": "Nello spazio",
+      "testo": "Il tardigrado è sopravvissuto al vuoto dello spazio.",
+      "voce": "Due. Il tardigrado è lungo meno di un millimetro. Nel 2007 lo hanno lasciato fuori da un satellite, nel vuoto dello spazio. Molti sono sopravvissuti.",
+      "immagine": "assets/immagini/tardigrado.jpg",
+      "credito": "Foto: Schokraie et al. (2012) · CC BY 2.5"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Superpotere 3",
+      "emoji": "🪼",
+      "grande": "Torna giovane",
+      "testo": "Una medusa può ricominciare la sua vita da capo.",
+      "voce": "Tre. La Turritopsis è una minuscola medusa che, quando è in pericolo, torna allo stadio di polipo. In pratica ricomincia la vita da capo.",
+      "immagine": "assets/immagini/medusa.jpg",
+      "credito": "Foto: Dr. Karen J. Osborn · CC0"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale superpotere vorresti?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale superpotere vorresti tu? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

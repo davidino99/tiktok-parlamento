@@ -1,0 +1,67 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 fatti che mandano in tilt il senso del tempo",
+  "descrizione": "3 fatti veri che mandano in tilt il senso del tempo ⏳ Il secondo è assurdo.",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "storia",
+    "scienza",
+    "spazio"
+  ],
+  "commentoFissato": "Quale ti ha sorpreso di più: 1, 2 o 3? 👇",
+  "fonti": [
+    "Squali: primi condritti/squali nel tardo Ordoviciano (~450 milioni di anni fa); primi alberi (Archaeopteris, Wattieza) nel Devoniano medio, ~385 milioni di anni fa.",
+    "Grande Piramide di Giza: circa 2560 a.C. Cleopatra VII: 69–30 a.C. Sbarco sulla Luna: 1969.",
+    "Venere: rotazione siderale ~243 giorni terrestri, periodo orbitale ~225 giorni (NASA)."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "⏳",
+      "testo": "3 fatti che mandano in tilt il senso del tempo",
+      "sotto": "Il secondo è assurdo",
+      "voce": "Tre fatti veri che mandano in tilt il senso del tempo. Il secondo è assurdo.",
+      "immagine": "assets/immagini/sfinge.jpg",
+      "credito": "Foto: Petar Milošević · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 1",
+      "emoji": "🦈",
+      "grande": "450 milioni di anni",
+      "testo": "Gli squali esistono da prima degli alberi.",
+      "voce": "Uno. Gli squali nuotano negli oceani da circa 450 milioni di anni. I primi alberi? Arrivano decine di milioni di anni dopo.",
+      "immagine": "assets/immagini/squalo.jpg",
+      "credito": "Foto: Terry Goss · CC BY 2.5"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 2",
+      "emoji": "👑",
+      "grande": "Cleopatra 🚀 Luna",
+      "testo": "Cleopatra è vissuta più vicina allo sbarco sulla Luna che alla Grande Piramide.",
+      "voce": "Due. Tra la costruzione della Grande Piramide e Cleopatra passano circa 2500 anni. Tra Cleopatra e lo sbarco sulla Luna, circa 2000.",
+      "immagine": "assets/immagini/cleopatra.jpg",
+      "credito": "Foto: José Luiz · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 3",
+      "emoji": "🪐",
+      "grande": "243 giorni",
+      "testo": "Su Venere un giorno dura più di un anno.",
+      "voce": "Tre. Venere gira su sé stessa così lentamente che un suo giorno dura 243 giorni terrestri. Ma fa il giro del Sole in 225. Un giorno più lungo di un anno.",
+      "immagine": "assets/immagini/venere.jpg",
+      "credito": "Foto: NASA/JPL"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale ti ha sorpreso di più?",
+      "sotto": "Scrivi 1, 2 o 3 nei commenti",
+      "voce": "Quale ti ha sorpreso di più? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

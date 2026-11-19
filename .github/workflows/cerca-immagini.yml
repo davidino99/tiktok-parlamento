@@ -1,0 +1,35 @@
+name: Cerca immagini
+
+# Quando cambia immagini/richieste.json su un branch di lavoro, cerca su Wikimedia Commons
+# immagini con licenza libera e salva i candidati (con autore e licenza) nello stesso branch.
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["immagini/richieste.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cerca:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Cerca e scarica
+        run: node scripts/cerca-immagini.mjs immagini/richieste.json
+
+      - name: Salva i candidati nel branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add immagini/candidati
+          git diff --cached --quiet && exit 0
+          git commit -m "Candidati immagini da Wikimedia Commons"
+          git push

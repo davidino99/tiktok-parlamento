@@ -1,0 +1,71 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 cose assurde sui pianeti",
+  "descrizione": "3 fatti veri sui pianeti del sistema solare 🪐 Il primo sembra impossibile.",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "spazio",
+    "pianeti",
+    "astronomia"
+  ],
+  "commentoFissato": "Quale ti ha sorpreso di più? 1, 2 o 3 👇",
+  "fonti": [
+    "Tramonti blu su Marte: la polvere fine diffonde la luce blu vicino al Sole (NASA/JPL, rover Curiosity, PIA19400).",
+    "Densità media di Saturno circa 0,69 g/cm³, inferiore a quella dell'acqua (NASA).",
+    "Olympus Mons, Marte: circa 22 km di altezza (2,5 volte l'Everest), base larga circa 600 km (NASA)."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🪐",
+      "testo": "3 cose assurde sui pianeti",
+      "sotto": "Il primo sembra impossibile",
+      "voce": "Tre fatti veri sui pianeti. Il primo sembra impossibile.",
+      "immagine": "assets/immagini/pianeti.jpg",
+      "credito": "Foto: NASA/JPL"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 1",
+      "emoji": "🌅",
+      "grande": "Tramonti blu",
+      "testo": "Su Marte i tramonti sono blu.",
+      "voce": "Uno. Sul nostro pianeta i tramonti sono rossi. Su Marte sono blu. Lo ha fotografato il rover Curiosity.",
+      "immagine": "assets/immagini/tramonto-marte.jpg",
+      "credito": "Foto: NASA/JPL-Caltech/MSSS"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 2",
+      "emoji": "🛁",
+      "grande": "Galleggia",
+      "testo": "Saturno è meno denso dell'acqua.",
+      "voce": "Due. Saturno è enorme, ma è fatto quasi solo di gas. È meno denso dell'acqua: in una vasca abbastanza grande, galleggerebbe.",
+      "immagine": "assets/immagini/saturno.jpg",
+      "credito": "Foto: NASA/JPL/Space Science Institute"
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 3",
+      "emoji": "🌋",
+      "grande": "22 km",
+      "testo": "Su Marte c'è un vulcano alto due volte e mezzo l'Everest.",
+      "voce": "Tre. Su Marte c'è un vulcano, l'Olympus Mons, alto circa ventidue chilometri. Due volte e mezzo l'Everest. La sua base è larga circa seicento chilometri, più della distanza tra Milano e Roma.",
+      "immagine": "assets/immagini/olympus.jpg",
+      "credito": "Foto: NASA/JPL"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale ti ha sorpreso di più?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale ti ha sorpreso di più? Scrivi uno, due o tre nei commenti.",
+      "immagine": "assets/immagini/pianeti.jpg",
+      "credito": "Foto: NASA/JPL"
+    }
+  ]
+}

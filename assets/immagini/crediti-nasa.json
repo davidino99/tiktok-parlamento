@@ -1,0 +1,62 @@
+{
+ "venere": {
+  "file": "assets/immagini/venere.jpg",
+  "credito": "Foto: NASA/JPL",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "luna-aldrin": {
+  "file": "assets/immagini/luna-aldrin.jpg",
+  "credito": "Foto: NASA",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "impronta": {
+  "file": "assets/immagini/impronta.jpg",
+  "credito": "Foto: NASA",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "stella-neutroni": {
+  "file": "assets/immagini/stella-neutroni.jpg",
+  "credito": "Foto: NASA/JPL-Caltech",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "sole": {
+  "file": "assets/immagini/sole.jpg",
+  "credito": "Foto: NASA/SDO",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "galassia": {
+  "file": "assets/immagini/galassia.jpg",
+  "credito": "Foto: NASA/JPL-Caltech",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "terra": {
+  "file": "assets/immagini/terra.jpg",
+  "credito": "Foto: NASA",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "tramonto-marte": {
+  "file": "assets/immagini/tramonto-marte.jpg",
+  "credito": "Foto: NASA/JPL-Caltech/MSSS",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "olympus": {
+  "file": "assets/immagini/olympus.jpg",
+  "credito": "Foto: NASA/JPL",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "pianeti": {
+  "file": "assets/immagini/pianeti.jpg",
+  "credito": "Foto: NASA/JPL",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "saturno": {
+  "file": "assets/immagini/saturno.jpg",
+  "credito": "Foto: NASA/JPL/Space Science Institute",
+  "licenza": "Pubblico dominio (NASA)"
+ },
+ "sahara-orbita": {
+  "file": "assets/immagini/sahara-orbita.jpg",
+  "credito": "Foto: NASA",
+  "licenza": "Pubblico dominio (NASA)"
+ }
+}

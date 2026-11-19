@@ -1,0 +1,74 @@
+{
+  "genere": "mistero",
+  "titolo": "Le pietre che si muovono da sole",
+  "descrizione": "Nel deserto della Death Valley le pietre si muovono da sole e lasciano una scia. Per decenni nessuno ha capito come 🪨",
+  "hashtag": [
+    "misteri",
+    "storievere",
+    "misteroirrisolto",
+    "imparacontiktok",
+    "storia",
+    "perte",
+    "deathvalley",
+    "scienza"
+  ],
+  "commentoFissato": "Avevi mai sentito questa storia? 👇",
+  "fonti": [
+    "Racetrack Playa, Death Valley National Park, California.",
+    "Scie lunghe fino a centinaia di metri; il movimento non era mai stato osservato direttamente.",
+    "Norris et al., PLOS ONE 2014: movimento osservato tra il 2013 e il 2014, causato da sottili lastre di ghiaccio spinte da un vento leggero, a pochi metri al minuto."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🪨",
+      "testo": "Pietre che si muovono da sole nel deserto.",
+      "voce": "In un deserto della California ci sono pietre che si muovono da sole. E nessuno le ha mai viste farlo.",
+      "immagine": "assets/immagini/pietra-scia.jpg",
+      "credito": "Foto: Lgcharlot · CC BY-SA 4.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Death Valley · California",
+      "grande": "Racetrack Playa",
+      "testo": "Un lago asciutto, piatto come un tavolo.",
+      "voce": "Si chiama Racetrack Playa. È un lago asciutto nella Death Valley, piatto come un tavolo.",
+      "immagine": "assets/immagini/racetrack.jpg",
+      "credito": "Foto: Daniel Mayer (mav) · CC BY-SA 3.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Le scie",
+      "grande": "Centinaia di metri",
+      "testo": "Dietro le pietre, lunghe scie sul terreno.",
+      "colpo": true,
+      "voce": "Sopra ci sono pietre, alcune pesanti decine di chili. E dietro ognuna c'è una scia lunga anche centinaia di metri. A volte dritta, a volte a zig zag.",
+      "immagine": "assets/immagini/pietre-scie.jpg",
+      "credito": "Foto: Annette Teng · CC BY 3.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Per decenni",
+      "grande": "Nessun testimone",
+      "testo": "Magnetismo? Scherzi? Nessuno sa spiegarlo.",
+      "voce": "Per decenni si parla di magnetismo, di scherzi, di forze misteriose. Ma nessuno le ha mai viste muoversi.",
+      "immagine": "assets/immagini/pietra-vicino.jpg",
+      "credito": "Foto: Daniel Mayer (mav) · CC BY-SA 3.0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Inverno 2013",
+      "grande": "Ghiaccio + vento",
+      "testo": "Lastre sottili di ghiaccio spinte da un vento leggero.",
+      "colpo": true,
+      "voce": "Poi, nell'inverno del 2013, alcuni scienziati le filmano. Di notte si forma una lastra di ghiaccio sottilissima. Al mattino si rompe, e il vento la spinge. Insieme alle pietre."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Mistero risolto. O quasi.",
+      "sotto": "Lo sapevi?",
+      "voce": "Bastava aspettare l'inverno giusto. Tu lo sapevi? Scrivilo nei commenti."
+    }
+  ]
+}

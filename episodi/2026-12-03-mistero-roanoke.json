@@ -1,0 +1,75 @@
+{
+  "genere": "mistero",
+  "titolo": "La colonia perduta di Roanoke",
+  "descrizione": "1590: 115 coloni inglesi spariscono nel nulla. Lasciano solo una parola incisa su un palo 🪵",
+  "hashtag": [
+    "misteri",
+    "storievere",
+    "misteroirrisolto",
+    "imparacontiktok",
+    "storia",
+    "perte",
+    "roanoke",
+    "colonia"
+  ],
+  "commentoFissato": "Dove sono andati i coloni? Scrivi la tua teoria 👇",
+  "fonti": [
+    "Colonia di Roanoke (oggi Carolina del Nord) fondata nel 1587 con circa 115 coloni, guidati da John White.",
+    "Virginia Dare, nipote di White, nata il 18 agosto 1587: prima bambina inglese nata nelle Americhe.",
+    "White torna in Inghilterra per rifornimenti; la guerra con la Spagna (Armada, 1588) lo blocca. Rientra nell'agosto 1590.",
+    "Trova l'insediamento abbandonato, la parola CROATOAN incisa su un palo e CRO su un albero; nessuna croce, il segnale di pericolo concordato."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🪵",
+      "testo": "115 persone spariscono. Resta solo una parola.",
+      "voce": "Nel 1590 centoquindici persone spariscono nel nulla. Lasciano solo una parola incisa su un palo.",
+      "immagine": "assets/immagini/croatoan.jpg",
+      "credito": "Immagine: Internet Archive Book Images · CC0"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "1587 · Nuovo Mondo",
+      "grande": "Roanoke",
+      "testo": "Una delle prime colonie inglesi in America.",
+      "voce": "Siamo nel 1587. Centoquindici coloni inglesi, uomini, donne e bambini, si stabiliscono sull'isola di Roanoke, in America.",
+      "immagine": "assets/immagini/virginea-pars.jpg",
+      "credito": "Immagine: John White · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "18 agosto 1587",
+      "grande": "Virginia Dare",
+      "testo": "La prima bambina inglese nata in America.",
+      "voce": "Lì nasce Virginia Dare, la prima bambina inglese nata nel Nuovo Mondo. Suo nonno, il governatore John White, torna in Inghilterra a prendere rifornimenti.",
+      "immagine": "assets/immagini/virginia-dare.jpg",
+      "credito": "Immagine: William Ludwell Sheppard · pubblico dominio"
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Il ritardo",
+      "grande": "3 anni",
+      "testo": "Una guerra con la Spagna lo blocca in Inghilterra.",
+      "colpo": true,
+      "voce": "Ma scoppia la guerra con la Spagna, e White resta bloccato. Riesce a tornare solo tre anni dopo, nel giorno del terzo compleanno della nipote."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Agosto 1590",
+      "grande": "«CROATOAN»",
+      "testo": "Il villaggio è vuoto. Una parola incisa su un palo.",
+      "colpo": true,
+      "voce": "Il villaggio è vuoto. Le case smontate. Nessun corpo. Solo una parola incisa su un palo: Croatoan. E nessuna croce, il segnale di pericolo che avevano concordato.",
+      "immagine": "assets/immagini/croatoan-incisione.jpg",
+      "credito": "Immagine: W. L. Sheppard, W. J. Linton · pubblico dominio"
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Nessuno li ha mai ritrovati.",
+      "sotto": "Dove sono andati?",
+      "voce": "White non riuscirà mai a cercarli. Secondo te dove sono andati i coloni? Scrivilo nei commenti."
+    }
+  ]
+}
