@@ -1,0 +1,60 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 cose sulla Terra che non sai",
+  "descrizione": "3 fatti veri sul nostro pianeta 🌍 Il terzo ti farà rivedere l'Everest.",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "terra",
+    "geografia"
+  ],
+  "commentoFissato": "Quale non sapevi? 1, 2 o 3 👇",
+  "fonti": [
+    "Circa 3.000 miliardi di alberi sulla Terra (Crowther et al., Nature 2015); stelle della Via Lattea stimate in 100–400 miliardi.",
+    "Periodo umido africano: il Sahara era in gran parte verde fino a circa 5.000–6.000 anni fa (laghi, savana, ippopotami; arte rupestre del Tassili).",
+    "Per il rigonfiamento equatoriale, la cima del Chimborazo (Ecuador) è il punto più lontano dal centro della Terra, circa 2 km più dell'Everest."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🌍",
+      "testo": "3 cose sulla Terra che non sai",
+      "sotto": "Il terzo riguarda l'Everest",
+      "voce": "Tre fatti veri sul nostro pianeta. Il terzo ti farà rivedere l'Everest."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 1",
+      "emoji": "🌳",
+      "grande": "3000 miliardi",
+      "testo": "Sulla Terra ci sono più alberi che stelle nella nostra galassia.",
+      "voce": "Uno. Sulla Terra ci sono circa tremila miliardi di alberi. Molti di più delle stelle della nostra galassia."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 2",
+      "emoji": "🦛",
+      "grande": "Sahara verde",
+      "testo": "Seimila anni fa nel Sahara c'erano laghi e ippopotami.",
+      "voce": "Due. Fino a circa seimila anni fa il Sahara era verde: c'erano laghi, savana, perfino ippopotami. Lo raccontano le pitture sulle rocce."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 3",
+      "emoji": "🏔️",
+      "grande": "Chimborazo",
+      "testo": "Il punto più lontano dal centro della Terra non è l'Everest.",
+      "voce": "Tre. La Terra è un po' schiacciata ai poli. Così la vetta più lontana dal centro del pianeta non è l'Everest, ma il Chimborazo, in Ecuador."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale non sapevi?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale non sapevi? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

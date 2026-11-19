@@ -1,0 +1,60 @@
+{
+  "genere": "curiosita",
+  "titolo": "3 cose sugli oceani che fanno paura",
+  "descrizione": "3 fatti veri sugli oceani 🌊 Il secondo è incredibile.",
+  "hashtag": [
+    "losapevi",
+    "curiosità",
+    "imparacontiktok",
+    "scienza",
+    "perte",
+    "oceano",
+    "mare"
+  ],
+  "commentoFissato": "Quale ti ha colpito di più? 1, 2 o 3 👇",
+  "fonti": [
+    "Abisso Challenger (Fossa delle Marianne): circa 10.900 m; Everest 8.849 m. Batiscafo Trieste, 23 gennaio 1960, Piccard e Walsh.",
+    "Seabed 2030 (2024): circa un quarto (26%) dei fondali oceanici mappato ad alta risoluzione.",
+    "Balenottera azzurra: fino a circa 30 m e 150+ tonnellate, considerata l'animale più grande mai esistito."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "🌊",
+      "testo": "3 cose sugli oceani che fanno paura",
+      "sotto": "Il secondo è incredibile",
+      "voce": "Tre fatti veri sugli oceani. Il secondo è incredibile."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 1",
+      "emoji": "⛰️",
+      "grande": "11 km",
+      "testo": "Nella Fossa delle Marianne l'Everest sparirebbe sott'acqua.",
+      "voce": "Uno. Il punto più profondo dell'oceano scende quasi a undici chilometri. Se ci mettessi l'Everest, sopra la cima resterebbero ancora due chilometri d'acqua."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 2",
+      "emoji": "🗺️",
+      "grande": "Solo 1/4",
+      "testo": "Abbiamo una mappa dettagliata solo di un quarto dei fondali.",
+      "voce": "Due. Abbiamo mappe dettagliate di tutta la superficie della Luna e di Marte. Ma dei fondali dei nostri oceani, solo circa un quarto."
+    },
+    {
+      "tipo": "fatto",
+      "etichetta": "Fatto 3",
+      "emoji": "🐋",
+      "grande": "30 metri",
+      "testo": "La balenottera azzurra è l'animale più grande mai esistito.",
+      "voce": "Tre. La balenottera azzurra arriva a trenta metri di lunghezza. Più grande di qualsiasi dinosauro: è l'animale più grande mai esistito."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "🤯",
+      "testo": "Quale ti ha colpito di più?",
+      "sotto": "Scrivi 1, 2 o 3",
+      "voce": "Quale ti ha colpito di più? Scrivi uno, due o tre nei commenti."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "genere": "mistero",
+  "titolo": "La scomparsa di Amelia Earhart",
+  "descrizione": "1937: la donna più famosa dell'aviazione sparisce nel Pacifico, a un passo dal giro del mondo ✈️ Dove è finita?",
+  "hashtag": [
+    "misteri",
+    "storievere",
+    "misteroirrisolto",
+    "imparacontiktok",
+    "storia",
+    "perte",
+    "ameliaearhart",
+    "aviazione"
+  ],
+  "commentoFissato": "Mare, isola deserta o altro? Scrivi la tua teoria 👇",
+  "fonti": [
+    "Partenza da Lae (Nuova Guinea) il 2 luglio 1937 con il navigatore Fred Noonan, a bordo di un Lockheed Electra 10E, diretti all'isola di Howland.",
+    "Ultimo messaggio radio ricevuto dalla guardacoste Itasca: «We are on the line 157 337…».",
+    "Ricerca di Marina e Guardia costiera USA durata circa due settimane; dichiarata legalmente morta nel 1939.",
+    "Ipotesi Nikumaroro (TIGHAR): ossa trovate nel 1940 e poi perdute; Jantz (Forensic Anthropology, 2018) ne riesamina le misure."
+  ],
+  "scene": [
+    {
+      "tipo": "apertura",
+      "emoji": "✈️",
+      "testo": "È la pilota più famosa del mondo. Un giorno sparisce nel nulla.",
+      "voce": "Nel 1937 è la pilota più famosa del mondo. Sta per completare il giro del pianeta. E sparisce nel nulla."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "2 luglio 1937 · Pacifico",
+      "grande": "Amelia Earhart",
+      "testo": "Con il navigatore Fred Noonan, verso un'isola minuscola.",
+      "voce": "Amelia Earhart decolla dalla Nuova Guinea con il navigatore Fred Noonan. Devono trovare Howland, un'isola lunga appena due chilometri, in mezzo all'oceano."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "L'ultimo messaggio",
+      "grande": "«157 337»",
+      "testo": "La radio la sente vicina. Poi, silenzio.",
+      "colpo": true,
+      "voce": "Una nave della guardia costiera la sente alla radio, sempre più vicina. Dice: siamo sulla linea uno cinque sette, tre tre sette. Poi più nulla."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "Le ricerche",
+      "grande": "Nessuna traccia",
+      "testo": "Navi e aerei cercano per settimane.",
+      "voce": "Navi e aerei della marina americana setacciano il Pacifico per settimane. Non trovano un rottame, né una macchia d'olio."
+    },
+    {
+      "tipo": "racconto",
+      "etichetta": "1940 · Nikumaroro",
+      "grande": "Ossa su un'isola",
+      "testo": "Su un atollo deserto, resti umani. Poi spariscono anche quelli.",
+      "colpo": true,
+      "voce": "Tre anni dopo, su un atollo deserto a sud, vengono trovate ossa umane e resti di un fuoco. Le ossa però vanno perdute. E il mistero resta aperto."
+    },
+    {
+      "tipo": "chiusura",
+      "emoji": "👇",
+      "testo": "Mare o isola deserta?",
+      "sotto": "Scrivi la tua teoria",
+      "voce": "Si è inabissata in mare, o è sopravvissuta per un po' su un'isola deserta? Tu cosa pensi? Scrivilo nei commenti."
+    }
+  ]
+}
