@@ -160,7 +160,7 @@ async function disegnaFotogrammi(ep, linea, cartella, soloIstanti = null) {
 
 function testoDescrizione(ep) {
   const tag = (ep.hashtag || []).map((h) => "#" + h.replace(/^#/, "")).join(" ");
-  const crediti = [...new Set(ep.scene.filter((s) => s.credito).map((s) => s.credito))];
+  const crediti = [...new Set(ep.scene.filter((s) => s.credito).map((s) => s.credito.replace(/^(Foto|Immagine): /, "")))];
   const foto = crediti.length ? `\n\n📷 Immagini: ${crediti.join(" · ")}` : "";
   const avvisi = voceDisponibile() ? "\n\n⚙️ Ricorda: attiva \"Contenuto generato dall'AI\" (voce sintetica)." : "";
   return `${ep.descrizione || ep.titolo || ""}\n\n${tag}${foto}\n\n💬 Commento da fissare:\n${ep.commentoFissato || ""}${avvisi}\n`;
