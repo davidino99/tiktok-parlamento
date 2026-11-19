@@ -14,7 +14,7 @@ Rotazione: curiosità → mistero → curiosità → …
 
 1. Ogni episodio è un file in `episodi/` che si chiama `AAAA-MM-GG-genere-titolo.json`.
 2. Ogni mattina il workflow **Video del giorno** (GitHub Actions) prende l'episodio con la data di oggi,
-   crea la voce con ElevenLabs, disegna i fotogrammi e monta il video.
+   crea la voce (gratuita, con Kokoro), disegna i fotogrammi e monta il video.
 3. Il video compare tra le **Releases** del repository, insieme a un `.txt` con descrizione, hashtag e
    commento da fissare. Dal telefono: apri GitHub → repository → Releases → scarica l'mp4.
 
@@ -23,19 +23,26 @@ Il workflow si può anche lanciare a mano da **Actions → Video del giorno → 
 - spunta **tutti** per generare subito, in parallelo, tutti gli episodi da oggi in poi;
 - oppure scrivi un file nel campo **episodio** per rigenerare solo quello.
 
-Un video già pubblicato in Releases non viene rigenerato la mattina, e ogni frase letta da ElevenLabs resta salvata nella
+Un video già pubblicato in Releases non viene rigenerato la mattina, e ogni frase già letta dalla voce resta salvata nella
 release **memoria-voce** (non eliminarla): rigenerare un video, per esempio per cambiare le foto, non consuma altri crediti.
 Le release di episodi rimossi o spostati di data vengono eliminate da sole.
 
-## Attivare la voce narrante
+## La voce narrante
 
-1. Crea un account su [elevenlabs.io](https://elevenlabs.io) (il piano Starter basta: un video usa circa 600 caratteri).
-2. Prendi la chiave API dal profilo ElevenLabs.
-3. Su GitHub: **Settings → Secrets and variables → Actions → New repository secret**, nome `ELEVENLABS_API_KEY`.
-4. Facoltativo: scegli una voce italiana dalla Voice Library di ElevenLabs e salva il suo ID come **variabile**
-   (scheda *Variables*) `ELEVENLABS_VOICE_ID`. Usa sempre la stessa: la voce diventa il marchio del canale.
+La voce è **gratuita**: la genera [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M), un modello open source
+(licenza Apache 2.0) che gira direttamente su GitHub, senza abbonamenti né limiti di caratteri.
+La voce del canale è **Nicola** (`im_nicola`) a velocità normale: usa sempre la stessa, diventa il marchio del canale.
 
-Senza chiave il video esce comunque, con sottotitoli ed effetti ma senza voce (utile per le prove).
+Per cambiarla: **Settings → Secrets and variables → Actions → Variables**
+
+| Variabile | Valori | Predefinito |
+|---|---|---|
+| `VOCE_MOTORE` | `kokoro`, `piper`, `elevenlabs` | `kokoro` |
+| `VOCE` | Kokoro: `im_nicola`, `if_sara` · Piper: `it_IT-paola-medium`, `it_IT-riccardo-x_low` · ElevenLabs: ID della voce | `im_nicola` |
+| `VOCE_VELOCITA` | es. `1.0`, `1.15` | `1.0` |
+
+Per ascoltare le voci disponibili: **Actions → Prova voci gratuite → Run workflow**, poi la release *prova-voci*.
+Con `VOCE_MOTORE=elevenlabs` serve il segreto `ELEVENLABS_API_KEY` (a crediti).
 
 ## Prima di pubblicare (ogni volta)
 
@@ -57,7 +64,8 @@ node src/genera.mjs episodi/2026-11-20-quiz-tre-indovinelli.json
 node src/genera.mjs episodi/2026-11-20-quiz-tre-indovinelli.json --anteprima   # solo alcuni fotogrammi, in pochi secondi
 ```
 
-Con la voce: `ELEVENLABS_API_KEY=... node src/genera.mjs episodi/<file>.json`.
+Con la voce (serve Python con `pip install -r requirements-voce.txt` ed `espeak-ng`):
+`VOCE_MOTORE=kokoro node src/genera.mjs episodi/<file>.json`.
 
 ## Scrivere un episodio
 

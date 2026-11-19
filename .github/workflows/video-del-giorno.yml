@@ -89,7 +89,17 @@ jobs:
       - name: Programmi necessari (ffmpeg, emoji)
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+          sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji espeak-ng
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-voce.txt
+
+      - name: Voce gratuita (Kokoro, Piper)
+        if: ${{ (vars.VOCE_MOTORE || 'kokoro') != 'elevenlabs' }}
+        run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-voce.txt
 
       - name: Dipendenze e browser per disegnare i fotogrammi
         run: |
@@ -107,6 +117,10 @@ jobs:
 
       - name: Genera il video
         env:
+          # Motore della voce: kokoro (gratis, predefinito), piper (gratis) o elevenlabs (a crediti).
+          VOCE_MOTORE: ${{ vars.VOCE_MOTORE || 'kokoro' }}
+          VOCE: ${{ vars.VOCE || 'im_nicola' }}
+          VOCE_VELOCITA: ${{ vars.VOCE_VELOCITA || '1.0' }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
           EPISODIO: ${{ matrix.episodio }}

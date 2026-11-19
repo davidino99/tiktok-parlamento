@@ -1,0 +1,44 @@
+name: Prova voci gratuite
+
+# Genera campioni audio delle voci open source (Kokoro, Piper) e li pubblica nella release "prova-voci".
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["scripts/prova-voci.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Programmi necessari
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng
+
+      - name: Voci open source
+        run: |
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu torch
+          pip install -q "kokoro>=0.9.4" soundfile piper-tts
+
+      - name: Genera i campioni
+        run: python scripts/prova-voci.py uscita/prova-voci
+
+      - name: Pubblica i campioni
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete prova-voci --yes --cleanup-tag 2>/dev/null || true
+          gh release create prova-voci uscita/prova-voci/*.mp3 --prerelease --target "$GITHUB_SHA" \
+            --title "Prova voci gratuite" \
+            --notes "Campioni delle voci open source: ascoltali e scegli quella che preferisci."
